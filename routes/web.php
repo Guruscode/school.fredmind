@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\Student\StudentAuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+
+Route::get('register', [StudentAuthController::class, 'showRegistrationForm'])->name('register');
+Route::post('register', [StudentAuthController::class, 'register'])->name('student.register');
+Route::get('success', [StudentAuthController::class, 'success'])->name('success.page');
+
 
 Route::get('/', [PagesController::class, 'index'])->name('index.home');
 Route::get('/term', [PagesController::class, 'term'])->name('index.term');
