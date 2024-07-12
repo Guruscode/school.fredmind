@@ -13,7 +13,7 @@ Footer START -->
     {{-- <img class="light-mode-item h-40px" src="assets/images/logo.svg" alt="logo">
     <img class="dark-mode-item h-40px" src="assets/images/logo-light.svg" alt="logo"> --}}
   </a>
-              <p class="my-3">Accredited by ASIC (Accreditation Service for International Schools, Colleges, and Universities)</p>
+              <p class="my-3">Equip yourself for a World of Opportunities</p>
               <!-- Social media icon -->
               <ul class="list-inline mb-0 mt-3">
                   <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-facebook" href="#"><i class="fab fa-fw fa-facebook-f"></i></a> </li>

@@ -137,9 +137,9 @@
                </figure>
                <!-- Title -->
                <h1 class="mb-0 display-6">
-                  Your Learning Path to 
+                  Unlock Your Potential,
                   <span class="position-relative">
-                     Endless Growth
+                     Master Tech Skills
                      <!-- SVG START -->
                      <span class="position-absolute top-50 start-50 translate-middle ms-3 z-index-n1">
                         <svg width="300px" height="62.1px" enable-background="new 0 0 366 62.1" viewBox="0 0 366 62.1" xmlns="http://www.w3.org/2000/svg">
@@ -150,8 +150,9 @@
                   </span>
                </h1>
                <!-- Content -->
-               <p class="my-4 lead">Fredmind school helps you learn the skills you need to build
-                  and grow the career you want.
+               <p class="my-4 lead">Hey Aspiring techie OR Are you a Tech Enthusiast?
+                  Explore, Learn, and Excel with our tech programs. Our program is designed to equip you with the skills needed to succeed in today's fast-paced digital world. No degree or prior tech experience required.
+                  
                </p>
                <!-- Info -->
                <ul class="list-inline position-relative justify-content-center justify-content-lg-start mb-4">
@@ -161,7 +162,7 @@
                </ul>
                <div class="d-sm-flex align-items-center justify-content-center justify-content-lg-start">
                   <!-- Button -->
-                  <a href="#" class="btn btn-lg btn-primary-soft me-2 mb-4 mb-sm-0">Create Account</a>
+                  <a href="{{route('student.register')}}" class="btn btn-lg btn-primary-soft me-2 mb-4 mb-sm-0">Enroll now</a>
                   <!-- Video button -->
                   <div class="d-flex align-items-center justify-content-center py-2 ms-0 ms-sm-4">
                      <a data-glightbox data-gallery="office-tour" href="https://www.youtube.com/embed/tXHviS-4ygo" class="btn btn-round btn-primary-shadow mb-0 overflow-visible me-7">
@@ -778,9 +779,8 @@
             </div>
             <div class="col-xl-5 order-1 text-center text-xl-start">
                <!-- Title -->
-               <h2 class="fs-1">Some valuable feedback from our students</h2>
-               <p>Supposing so be resolving breakfast am or perfectly. It drew a hill from me. Valley by oh twenty direct me so. Departure defective arranging rapturous did believe him all had supported. Family months lasted simple set nature vulgar
-                  him. Picture for attempt joy excited ten carried manners talking how.
+               <h2 class="fs-1">Go from CLUELESS to TECH BRO!!!</h2>
+               <p>Hear what our students have to say from their learning experience
                </p>
                <a href="#" class="btn btn-primary mb-0">View Reviews</a>
             </div>

@@ -1,8 +1,10 @@
 <?php
 
-use App\Http\Controllers\PagesController;
-use App\Http\Controllers\Student\StudentAuthController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Tutors\TeacherAuthController;
+use App\Http\Controllers\Student\StudentAuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,10 +17,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::prefix('student')->middleware('student.redirect')->group(function () {
+  Route::get('register', [StudentAuthController::class, 'showRegistrationForm'])->name('student.register.form');
+  Route::post('register', [StudentAuthController::class, 'register'])->name('student.register');
 
-Route::get('register', [StudentAuthController::class, 'showRegistrationForm'])->name('register');
-Route::post('register', [StudentAuthController::class, 'register'])->name('student.register');
-Route::get('success', [StudentAuthController::class, 'success'])->name('success.page');
+  Route::get('login', [StudentAuthController::class, 'showLoginForm'])->name('student.login.form');
+  Route::post('login', [StudentAuthController::class, 'login'])->name('student.login');
+  Route::get('success', [StudentAuthController::class, 'success'])->name('student.success.page');
+  Route::get('dashboard', [StudentAuthController::class, 'studentdashboard'])->name('student.dashboard');
+  Route::get('course', [StudentAuthController::class, 'studentCourse'])->name('student.course');
+  Route::get('course/details', [StudentAuthController::class, 'studentCourseDetails'])->name('student.course.details');
+  Route::get('programs', [StudentAuthController::class, 'studentProgram'])->name('student.programs');
+  Route::get('payment', [StudentAuthController::class, 'studentPayment'])->name('student.payment');
+});
+
+
+
+// Routes for teachers
+Route::prefix('teacher')->group(function () {
+  Route::get('register', [TeacherAuthController::class, 'showRegistrationForm'])->name('teacher.register.form');
+  Route::post('register', [TeacherAuthController::class, 'register'])->name('teacher.register');
+  Route::get('success', [TeacherAuthController::class, 'success'])->name('teacher.success.page');
+});
+
+// Routes for admin
+Route::prefix('admin')->group(function () {
+  Route::get('register', [AdminController::class, 'showRegistrationForm'])->name('admin.register.form');
+  Route::post('register', [AdminController::class, 'register'])->name('admin.register');
+  Route::get('success', [AdminController::class, 'success'])->name('admin.success.page');
+});
 
 
 Route::get('/', [PagesController::class, 'index'])->name('index.home');

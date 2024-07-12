@@ -42,7 +42,7 @@
                   <div class="col-sm-10 col-xl-8 m-auto">
                      <!-- Title -->
                      <span class="mb-0 fs-1">👋</span>
-                     <h1 class="fs-2">Register with Eduport!</h1>
+                     <h1 class="fs-2">Register with Fredmind school!</h1>
                      <p class="lead mb-4">Join our community today!</p>
                      <!-- Registration Form START -->
                      <form method="POST" action="{{ route('student.register') }}">
@@ -77,16 +77,14 @@
                         </div>
                         <!-- Gender, Date of Birth -->
 
-                      
-
                         <div class="row">
                            <div class="col-md-6 mb-4">
                               <label for="inputGender" class="form-label @error('gender') is-invalid @enderror">Gender *</label>
                               <select class="form-select form-select-lg bg-light border-0 @error('gender') is-invalid @enderror" id="inputGender" name="gender" required>
                                  <option selected>Select Gender</option>
-                                 <option value="male" {{ old('gender') == 'Male' ? 'selected' : '' }}>Male</option>
-                                 <option value="female" {{ old('gender') == 'Female' ? 'selected' : '' }}>Female</option>
-                                 <option value="other" {{ old('gender') == 'Other' ? 'selected' : '' }}>Other</option>
+                                 <option value="Male" {{ old('gender') == 'Male' ? 'selected' : '' }}>Male</option>
+                                 <option value="Female" {{ old('gender') == 'Female' ? 'selected' : '' }}>Female</option>
+                                 <option value="Other" {{ old('gender') == 'Other' ? 'selected' : '' }}>Other</option>
                               </select>
                               @error('gender')
                                   <span class="invalid-feedback" role="alert">
@@ -207,7 +205,7 @@
                      <!-- Registration Form END -->
                      <!-- Sign in link -->
                      <div class="mt-4 text-center">
-                        <span>Already have an account? <a href="#">Sign in here</a></span>
+                        <span>Already have an account? <a href="{{route('student.login.form')}}">Sign in here</a></span>
                      </div>
                   </div>
                </div>

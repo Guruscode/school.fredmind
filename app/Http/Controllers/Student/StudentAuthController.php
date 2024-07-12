@@ -2,22 +2,58 @@
 
 namespace App\Http\Controllers\Student;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use App\Models\Student;
 use App\Models\Country;
+use App\Models\Student;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+
 class StudentAuthController extends Controller
 {
 
     public function showRegistrationForm ()
     {
         $countries = Country::all();
-        return view('auths.registeration' , compact('countries'));
+        return view('students.registeration' , compact('countries'));
     }
+    public function showLoginForm ()
+    {
+       
+        return view('students.login' );
+    }
+    public function studentdashboard ()
+    {
+       
+        return view('students.dashboard' );
+    }
+    public function studentCourse ()
+    {
+       
+        return view('students.Course.index');
+    }
+    public function studentCourseDetails ()
+    {
+       
+        return view('students.Course.details');
+    }
+    
+    public function studentProgram ()
+    {
+       
+        return view('students.Program.index' );
+    }
+    public function studentPayment ()
+    {
+       
+        return view('students.Payment.index');
+    }
+
+    
   public function success ()
   {
-    return view('auths.success');
+    return view('students.success');
   }
 
     public function register(Request $request)
@@ -34,6 +70,7 @@ class StudentAuthController extends Controller
             'how_did_you_hear' => 'required|string|max:255',
             'password' => 'required|string|min:8|confirmed',
         ]);
+
     
         // Retrieve the selected country name
         $country = Country::findOrFail($request->country)->name;
@@ -53,9 +90,23 @@ class StudentAuthController extends Controller
         ]);
     
         if ($student) {
-            return redirect()->route('success.page'); // Redirect to success page
+            return redirect()->route('student.success.page'); // Redirect to success page
         } else {
             return redirect()->back()->with('error', 'Registration failed. Please try again.'); // Redirect back with an error message
         }
     }
+    public function login(Request $request)
+    {
+        $credentials = $request->only('email', 'password');
+    
+        if (Auth::guard('student')->attempt($credentials)) {
+          
+            return redirect()->route('student.dashboard'); // Redirect to dashboard or any other authenticated route
+        }
+    
+        return redirect()->back()->withInput($request->only('email'))->withErrors([
+            'email' => 'These credentials do not match our records.',
+        ]);
+    }
+
 }

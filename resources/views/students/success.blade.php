@@ -9,7 +9,7 @@
               <div class="card-body">
                   <h3 class="card-title">Registration Successful</h3>
                   <p class="card-text">Your registration was successful!</p>
-                  <a href="{{ route('index.home') }}" class="btn btn-primary">Go to Home</a>
+                  <a href="{{ route('student.login.form') }}" class="btn btn-primary">Login</a>
               </div>
           </div>
       </div>
