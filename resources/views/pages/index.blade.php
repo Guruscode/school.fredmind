@@ -30,38 +30,9 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="content3 careerm5 cid-tvKZHQgHiG" id="content3-3">
 
-    
-
-    
-    
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6 col-md-6">
-                <div class="title-wrapper">
-                    <h3 class="mbr-section-title mbr-fonts-style display-5">About <br>Mentorship Program</h3>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 col-md-6">
-                <div class="mbr-section-btn">
-                    <a class="btn btn-info-outline display-4" href="#">
-                        <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                        See more
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section data-bs-version="5.1" class="content7 careerm5 cid-tvL1Lf2EIE" id="content7-g">
-
-    
-
-    
-    
 
     <div class="container-fluid">
         <div class="row flex-row-reverse">
@@ -96,6 +67,75 @@
         </div>
     </div>
 </section>
+
+
+<section data-bs-version="5.1" class="features4 careerm5 cid-tvKZJyfOwh" id="features4-4">
+
+    
+
+    
+    
+
+    <div class="container-fluid">
+       
+        <div class="row">
+            <h2 class="mbr-section-title mbr-fonts-style display-2">Unlock your potential, Learn with Us</h2>
+            <div class="col-12 col-lg-6 card">
+                <div class="image-wrapper">
+                    <img src="{{asset('ass_asset/img/image14.jpg')}}" alt="">
+                </div>
+            </div>
+            <div class="counter-container col-12 col-lg-6 card">
+                
+                <div class="card-wrapper">
+                    <p class="mbr-number mbr-fonts-style display-1">
+                        10
+                    </p>
+                    <h3 class="mbr-section-title mbr-fonts-style display-7">
+                        Academy
+                    </h3>
+                    <p class="mbr-text mbr-fonts-style display-4">
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="card-wrapper">
+                    <p class="mbr-number mbr-fonts-style display-1">
+                        01
+                    </p>
+                    <h3 class="mbr-section-title mbr-fonts-style display-7">
+                        First
+                    </h3>
+                    <p class="mbr-text mbr-fonts-style display-4">
+                        Nostrum numquam odio quam.
+                    </p>
+                </div>
+                <div class="card-wrapper">
+                    <p class="mbr-number mbr-fonts-style display-1">
+                        1k+
+                    </p>
+                    <h3 class="mbr-section-title mbr-fonts-style display-7">
+                        Projects
+                    </h3>
+                    <p class="mbr-text mbr-fonts-style display-4">
+                        Commodi debitis deleniti.
+                    </p>
+                </div>
+                <div class="card-wrapper">
+                    <p class="mbr-number mbr-fonts-style display-1">
+                        5k+
+                    </p>
+                    <h3 class="mbr-section-title mbr-fonts-style display-7">
+                        Subscribes
+                    </h3>
+                    <p class="mbr-text mbr-fonts-style display-4">
+                        Vero voluptatibus voluptatum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <section data-bs-version="5.1" class="features7 careerm5 cid-tvKZGuz1CB" id="features7-2">
 
@@ -164,69 +204,6 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="features4 careerm5 cid-tvKZJyfOwh" id="features4-4">
-
-    
-
-    
-    
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-lg-6 card">
-                <div class="image-wrapper">
-                    <img src="{{asset('ass_asset/img/image14.jpg')}}" alt="">
-                </div>
-            </div>
-            <div class="counter-container col-12 col-lg-6 card">
-                <div class="card-wrapper">
-                    <p class="mbr-number mbr-fonts-style display-1">
-                        10
-                    </p>
-                    <h3 class="mbr-section-title mbr-fonts-style display-7">
-                        Academy
-                    </h3>
-                    <p class="mbr-text mbr-fonts-style display-4">
-                        Lorem ipsum dolor sit amet.
-                    </p>
-                </div>
-                <div class="card-wrapper">
-                    <p class="mbr-number mbr-fonts-style display-1">
-                        01
-                    </p>
-                    <h3 class="mbr-section-title mbr-fonts-style display-7">
-                        First
-                    </h3>
-                    <p class="mbr-text mbr-fonts-style display-4">
-                        Nostrum numquam odio quam.
-                    </p>
-                </div>
-                <div class="card-wrapper">
-                    <p class="mbr-number mbr-fonts-style display-1">
-                        1k+
-                    </p>
-                    <h3 class="mbr-section-title mbr-fonts-style display-7">
-                        Projects
-                    </h3>
-                    <p class="mbr-text mbr-fonts-style display-4">
-                        Commodi debitis deleniti.
-                    </p>
-                </div>
-                <div class="card-wrapper">
-                    <p class="mbr-number mbr-fonts-style display-1">
-                        5k+
-                    </p>
-                    <h3 class="mbr-section-title mbr-fonts-style display-7">
-                        Subscribes
-                    </h3>
-                    <p class="mbr-text mbr-fonts-style display-4">
-                        Vero voluptatibus voluptatum.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section data-bs-version="5.1" class="content4 careerm5 cid-tvKZOM6hSm" id="content4-7">
 
