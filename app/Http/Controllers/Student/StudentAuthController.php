@@ -15,8 +15,9 @@ class StudentAuthController extends Controller
 
     public function showRegistrationForm ()
     {
-        $countries = Country::all();
-        return view('students.registeration' , compact('countries'));
+        // $countries = Country::all();
+        // return view('students.registeration' , compact('countries'));
+        return view('students.form');
     }
     public function showLoginForm ()
     {
