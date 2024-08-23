@@ -61,7 +61,7 @@
             <div class="col-12 col-lg-5">
                 <div class="image-wrapper">
                     <img src="{{asset('ass_asset/img/image19.jpg')}}" alt="">
-                    <img src="{{asset('ass_asset/img/image20.jpg')}}" alt="">
+                    <img src="{{asset('ass_asset/img/posing.jpg')}}" alt="">
                 </div>
             </div>
         </div>
@@ -73,10 +73,10 @@
         <div class="row flex-row-reverse">
 
               <div class="col-12 col-lg-5">
-                <div class="image-wrapper">
+                {{-- <div class="image-wrapper">
                     <img src="{{asset('ass_asset/img/image19.jpg')}}" alt="">
                     <img src="{{asset('ass_asset/img/image20.jpg')}}" alt="">
-                </div>
+                </div> --}}
             </div>
             <div class="col-12 col-lg-7 text-wrap">
                 <div class="text-wrapper">
@@ -129,7 +129,7 @@
             <div class="col-12 col-lg-5">
                 <div class="image-wrapper">
                     <img src="{{asset('ass_asset/img/image19.jpg')}}" alt="">
-                    <img src="{{asset('ass_asset/img/image20.jpg')}}" alt="">
+                    <img src="{{asset('ass_asset/img/library.jpg')}}" alt="">
                 </div>
             </div>
         </div>
@@ -147,7 +147,7 @@
      
             <div class="col-12 col-lg-6 card">
                 <div class="image-wrapper">
-                    <img src="{{asset('ass_asset/img/image14.jpg')}}" alt="">
+                    <img src="{{asset('ass_asset/img/focused.jpg')}}" alt="">
                 </div>
             </div>
             <div class="counter-container col-12 col-lg-6 card">
@@ -202,7 +202,7 @@
             <div class="col-12 col-lg-4 item features-image">
                 <div class="item-wrapper">
                     <div class="item-img">
-                        <img src="{{asset('ass_asset/img/image1.jpg')}}" alt="">
+                        <img src="{{asset('ass_asset/img/laptop.jpg')}}" alt="">
                     </div>
                 </div>
                
@@ -216,7 +216,7 @@
             <div class="col-12 col-lg-4 card item features-image">
                 <div class="item-wrapper">
                     <div class="item-img">
-                        <img src="{{asset('ass_asset/img/image15.jpg')}}" alt="">
+                        <img src="{{asset('ass_asset/img/snacks.jpg')}}" alt="">
                     </div>
                 </div>
                 <div class="item-content">
@@ -229,7 +229,7 @@
             <div class="col-12 col-lg-4 item features-image">
                 <div class="item-wrapper">
                     <div class="item-img">
-                        <img src="{{asset('ass_asset/img/image19.jpg')}}" alt="">
+                        <img src="{{asset('ass_asset/img/bed.jpg')}}" alt="">
                     </div>
                 </div>
                 <div class="item-content">
