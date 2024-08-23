@@ -22,7 +22,7 @@
            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <div class="navbar-brand d-none d-lg-flex">
                
-                   <span class="navbar-caption-wrap"><a class="navbar-caption text-secondary display-4" href="../index.html">Fredmind School
+                   <span class="navbar-caption-wrap"><a class="navbar-caption text-secondary display-2" href="../index.html">Fredmind School
                        </a></span>
                </div>
                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-primary display-4" href="../index.html">Home</a></li>

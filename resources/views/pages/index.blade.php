@@ -7,9 +7,12 @@
         <div class="row">
             <div class="col-12 col-lg-7">
                 <div class="title-wrapper">
-                    <h1 class="mbr-section-title mbr-fonts-style display-3">PURELY PRACTICAL 
-                       
-                         <br>& ACCESS TO JOBS. <br> BUILD A GLOBALLY LUCRATIVE TECH CAREER</h1>
+                    <h1 class="mbr-section-title mbr-fonts-style display-1">ACQUIRE 
+                        <br>TECH SKILLS HERE</h1>
+                        <p class="mbr-text mbr-fonts-style display-9">PURELY PRACTICAL & ACCESS TO JOBS.
+                            BUILD A GLOBALLY LUCRATIVE TECH CAREER
+                            
+                            </p>
                     <p class="mbr-text mbr-fonts-style display-7">
                         Learn with experts | Get Certified | Access to Jobs.
                         <br>
@@ -38,22 +41,87 @@
         <div class="row flex-row-reverse">
             <div class="col-12 col-lg-7 text-wrap">
                 <div class="text-wrapper">
-                    <h2 class="mbr-section-title mbr-fonts-style display-2">Building future-proof Talent on a Global Scale</h2>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid architecto atque
-                        corporis, dicta doloribus eos impedit inventore laudantium odio possimus quae quasi quia
-                        repellendus repudiandae tempore ullam vel velit.
+                    <h2 class="mbr-section-title mbr-fonts-style display-3">Building future-proof Talent on a Global Scale</h2>
+                    <p class="mbr-text mbr-fonts-style display-1">
+                        For Individuals
                     </p>
                     <p class="mbr-cit mbr-fonts-style display-4">
-                        "Impedit inventore laudantium"
+                        Earn a Tech Diploma and master the skills that will help you achieve a career change, workplace promotion, or even international job opportunities.
+
                     </p>
-                    <p class="mbr-name mbr-fonts-style display-4">
-                        Marian Clark
-                    </p>
+                  
                     <div class="mbr-section-btn">
                         <a class="btn btn-primary-outline display-4" href="#">
                             <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                            Read more
+                            Start Learning Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="image-wrapper">
+                    <img src="{{asset('ass_asset/img/image19.jpg')}}" alt="">
+                    <img src="{{asset('ass_asset/img/image20.jpg')}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-bs-version="5.1" class="content7 careerm5 cid-tvL1Lf2EIE" id="content7-g">
+
+    <div class="container-fluid">
+        <div class="row flex-row-reverse">
+
+              <div class="col-12 col-lg-5">
+                <div class="image-wrapper">
+                    <img src="{{asset('ass_asset/img/image19.jpg')}}" alt="">
+                    <img src="{{asset('ass_asset/img/image20.jpg')}}" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-lg-7 text-wrap">
+                <div class="text-wrapper">
+                   
+                    <p class="mbr-text mbr-fonts-style display-1">
+                        For Corporates
+                    </p>
+                    <p class="mbr-cit mbr-fonts-style display-4">
+                        Build your dream team with Fredmind Digital School. Hire our top graduates to bring your vision to life.
+
+                    </p>
+                  
+                    <div class="mbr-section-btn">
+                        <a class="btn btn-primary-outline display-4" href="#">
+                            <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
+                            Hire Our Graduates
+                        </a>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content7 careerm5 cid-tvL1Lf2EIE" id="content7-g">
+
+    <div class="container-fluid">
+        <div class="row flex-row-reverse">
+            <div class="col-12 col-lg-7 text-wrap">
+                <div class="text-wrapper">
+                   
+                    <p class="mbr-text mbr-fonts-style display-1">
+                        For Impact
+                    </p>
+                    <p class="mbr-cit mbr-fonts-style display-4">
+                        Fredmind Digital School’s Scholarship Program is committed to providing free tech education to ten thousand underprivileged young Africans.
+
+
+                    </p>
+                  
+                    <div class="mbr-section-btn">
+                        <a class="btn btn-primary-outline display-4" href="#">
+                            <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
+                            Collaborate With Us
                         </a>
                     </div>
                 </div>
@@ -75,7 +143,8 @@
     <div class="container-fluid">
        
         <div class="row">
-            <h2 class="mbr-section-title mbr-fonts-style display-2">Unlock your potential, Learn with Us</h2>
+           
+     
             <div class="col-12 col-lg-6 card">
                 <div class="image-wrapper">
                     <img src="{{asset('ass_asset/img/image14.jpg')}}" alt="">
@@ -84,47 +153,31 @@
             <div class="counter-container col-12 col-lg-6 card">
                 
                 <div class="card-wrapper">
-                    <p class="mbr-number mbr-fonts-style display-1">
-                        10
-                    </p>
-                    <h3 class="mbr-section-title mbr-fonts-style display-7">
-                        Academy
-                    </h3>
-                    <p class="mbr-text mbr-fonts-style display-4">
-                        Lorem ipsum dolor sit amet.
+                  
+                 
+                    <p class="mbr-text mbr-fonts-style display-8">
+                        Our modules are well-structured with up-to-date information, and relevant course content to align with your learning goals.
                     </p>
                 </div>
                 <div class="card-wrapper">
-                    <p class="mbr-number mbr-fonts-style display-1">
-                        01
-                    </p>
-                    <h3 class="mbr-section-title mbr-fonts-style display-7">
-                        First
-                    </h3>
-                    <p class="mbr-text mbr-fonts-style display-4">
-                        Nostrum numquam odio quam.
+                   
+                    <p class="mbr-text mbr-fonts-style display-8">
+                        The functionality of our learning platform helps you learn from anywhere. We offer a virtual-first, self paced program that runs in cohorts. 
+
                     </p>
                 </div>
                 <div class="card-wrapper">
-                    <p class="mbr-number mbr-fonts-style display-1">
-                        1k+
-                    </p>
-                    <h3 class="mbr-section-title mbr-fonts-style display-7">
-                        Projects
-                    </h3>
-                    <p class="mbr-text mbr-fonts-style display-4">
-                        Commodi debitis deleniti.
+                  
+                    <p class="mbr-text mbr-fonts-style display-8">
+                        Our instructors/facilitators are seasoned industry leaders with relevant industry experience, academic credentials, and a strong track record in teaching the subject matter. 
+
                     </p>
                 </div>
                 <div class="card-wrapper">
-                    <p class="mbr-number mbr-fonts-style display-1">
-                        5k+
-                    </p>
-                    <h3 class="mbr-section-title mbr-fonts-style display-7">
-                        Subscribes
-                    </h3>
-                    <p class="mbr-text mbr-fonts-style display-4">
-                        Vero voluptatibus voluptatum.
+                   
+                    <p class="mbr-text mbr-fonts-style display-8">
+                        Our course helps you assess your progress and provides you with real-time feedback through quizzes, assignments, or projects to gauge your understanding.
+
                     </p>
                 </div>
             </div>
@@ -141,6 +194,10 @@
     
 
     <div class="container">
+        <h2 class="mbr-section-title mbr-fonts-style display-1">Work with Us!</h2>
+        <p  class="mbr-section-title mbr-fonts-style display-6">Want to shape the future of work with us?
+        </p>
+        <br><br><br>
         <div class="row">
             <div class="col-12 col-lg-4 item features-image">
                 <div class="item-wrapper">
@@ -148,16 +205,12 @@
                         <img src="{{asset('ass_asset/img/image1.jpg')}}" alt="">
                     </div>
                 </div>
+               
                 <div class="item-content">
                     <h3 class="mbr-card-title mbr-fonts-style display-5">
-                        Voluptatem <br> voluptatum
+                        Hire our grads 
                     </h3>
-                    <div class="mbr-section-btn">
-                        <a class="btn btn-primary-outline display-4" href="#">
-                            <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                            See more
-                        </a>
-                    </div>
+                    
                 </div>
             </div>
             <div class="col-12 col-lg-4 card item features-image">
@@ -168,14 +221,9 @@
                 </div>
                 <div class="item-content">
                     <h3 class="mbr-card-title mbr-fonts-style display-5">
-                        Praesentium <br> tempora
+                        Train your in-house team
                     </h3>
-                    <div class="mbr-section-btn">
-                        <a class="btn btn-primary-outline display-4" href="#">
-                            <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                            See more
-                        </a>
-                    </div>
+                   
                 </div>
             </div>
             <div class="col-12 col-lg-4 item features-image">
@@ -186,57 +234,23 @@
                 </div>
                 <div class="item-content">
                     <h3 class="mbr-card-title mbr-fonts-style display-5">
-                        Iusto <br> laudantium libero
+                        Sponsor an aspiring techie
                     </h3>
-                    <div class="mbr-section-btn">
-                        <a class="btn btn-primary-outline display-4" href="#">
-                            <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                            See more
-                        </a>
-                    </div>
+                   
                 </div>
             </div>
+        </div>
+        <div class="mbr-section-btn">
+            <a class="btn btn-primary-outline display-4" href="#">
+                <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
+                Let’s Work>> 
+            </a>
         </div>
     </div>
 </section>
 
 
-<section data-bs-version="5.1" class="content4 careerm5 cid-tvKZOM6hSm" id="content4-7">
 
-    
-
-    
-    
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-lg-8 card">
-                <div class="image-wrapper">
-                    <img src="{{asset('ass_asset/img/image13.jpg')}}" alt="">
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 card">
-                <div class="card-wrapper">
-                    <div class="card-date">
-                        <p class="mbr-date mbr-fonts-style display-2">
-                            05. March
-                            <span>2030</span>
-                        </p>
-                    </div>
-                    <div class="card-link-wrapper">
-                        <a href="" class="card-link">
-                            <p class="mbr-link mbr-fonts-style display-5">
-                                Our lectures
-                                <span class="mmobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn">
-                            </span>
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section data-bs-version="5.1" class="slider2 mbr-embla careerm5 cid-tvKZLU2Jrp" id="slider2-5">
     
@@ -248,7 +262,7 @@
             <div class="col-12">
                 <div class="title-wrapper">
                     <h2 class="mbr-section-title mbr-fonts-style display-2">
-                        Our News
+                        school news
                     </h2>
                 </div>
             </div>
@@ -261,7 +275,7 @@
                                     <a href="#">
                                         <div class="item-wrapper position-relative">
                                             <div class="image-wrap">
-                                                <img src="{{asset('ass_asset/img/image16.jpg')}}" alt="">
+                                                <img src="{{asset('ass_asset/img/image18.jpg')}}" alt="">
                                                 <p class="mbr-date mbr-fonts-style display-2">
                                                     09.
                                                     <span>March, 2030</span>
@@ -334,7 +348,7 @@
                                     <a href="#">
                                         <div class="item-wrapper position-relative">
                                             <div class="image-wrap">
-                                                <img src="{{asset('ass_asset/img/image9.jpg')}}" alt="">
+                                                <img src="{{asset('ass_asset/img/image19.jpg')}}" alt="">
                                                 <p class="mbr-date mbr-fonts-style display-2">
                                                     01.
                                                     <span>April, 2030</span>
@@ -382,7 +396,7 @@
                                     <a href="#">
                                         <div class="item-wrapper position-relative">
                                             <div class="image-wrap">
-                                                <img src="{{asset('ass_asset/img/image4.jpg')}}" alt="">
+                                                <img src="{{asset('ass_asset/img/image19.jpg')}}" alt="">
                                                 <p class="mbr-date mbr-fonts-style display-2">
                                                     09.
                                                     <span>March, 2030</span>
@@ -443,7 +457,7 @@
 
 <section data-bs-version="5.1" class="gallery1 careerm5 cid-tvKZN5BrCX" id="gallery1-6">
 
-    
+    <h2 class="mbr-section-title mbr-fonts-style display-1">Our Latest Graduate</h2>
 
     
     
@@ -452,7 +466,7 @@
         <div class="row">
             <div class="col-12 col-lg-3 card">
                 <div class="image-wrapper">
-                    <img src="assets/images/image3.jpg" alt="">
+                    <img src="{{asset('ass_asset/img/image3.jpg')}}" alt="">
                 </div>
             </div>
             <div class="col-12 col-lg-3 card">
@@ -484,7 +498,7 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="content6 careerm5 cid-tvL1iXbRI3" id="content6-b">
+{{-- <section data-bs-version="5.1" class="content6 careerm5 cid-tvL1iXbRI3" id="content6-b">
 
     
 
@@ -504,7 +518,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 <section data-bs-version="5.1" class="features6 careerm5 cid-tvL1pwI2jt" id="features6-d">
 
@@ -612,183 +626,8 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="pricing1 careerm5 cid-tvKZQBuzNi" id="pricing1-8">
 
-    
 
-    
-    
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="title-wrapper">
-                    <h2 class="mbr-section-title mbr-fonts-style display-2">
-                        Our pricing
-                    </h2>
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
-                        Ad, culpa cum cumque cupiditate dolor.
-                    </p>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 card">
-                <div class="card-wrapper">
-                    <div class="card-content">
-                        <h3 class="mbr-card-title mbr-fonts-style display-5">
-                            Start Plan
-                        </h3>
-                        <div class="price-wrap">
-                            <p class="mbr-price mbr-fonts-style display-1">
-                                <span>$</span>
-                                30
-                            </p>
-                        </div>
-                        <p class="mbr-desc mbr-fonts-style display-7">
-                            Per months
-                        </p>
-                        <ul class="list mbr-fonts-style display-4">
-                            <li class="item-wrap">Similique tenetur totam vitae</li>
-                            <li class="item-wrap">Consectetur adipisicing elit</li>
-                            <li class="item-wrap">Accusamus consequuntur cumque</li>
-                            <li class="item-wrap">Error eum facilis molestiae</li>
-                        </ul>
-                    </div>
-                    <div class="mbr-section-btn">
-                        <a class="btn btn-primary-outline display-4" href="#">
-                            <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                            Buy now
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 card">
-                <div class="card-wrapper">
-                    <div class="best-wrap">
-                        <div class="best-wrapper">
-                            <p class="mbr-best mbr-fonts-style display-4">
-                                Best Price
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="mbr-card-title mbr-fonts-style display-5">
-                            Main Plan
-                        </h3>
-                        <div class="price-wrap">
-                            <p class="mbr-price mbr-fonts-style display-1">
-                                <span>$</span>
-                                60
-                            </p>
-                        </div>
-                        <p class="mbr-desc mbr-fonts-style display-7">
-                            Per months
-                        </p>
-                        <ul class="list mbr-fonts-style display-4">
-                            <li class="item-wrap">Similique tenetur totam vitae</li>
-                            <li class="item-wrap">Consectetur adipisicing elit</li>
-                            <li class="item-wrap">Accusamus consequuntur cumque</li>
-                            <li class="item-wrap">Error eum facilis molestiae</li>
-                        </ul>
-                    </div>
-                    <div class="mbr-section-btn">
-                        <a class="btn btn-primary-outline display-4" href="#">
-                            <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                            Buy now
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 card">
-                <div class="card-wrapper">
-                    <div class="card-content">
-                        <h3 class="mbr-card-title mbr-fonts-style display-5">
-                            Ultra Plan
-                        </h3>
-                        <div class="price-wrap">
-                            <p class="mbr-price mbr-fonts-style display-1">
-                                <span>$</span>
-                                99
-                            </p>
-                        </div>
-                        <p class="mbr-desc mbr-fonts-style display-7">
-                            Per months
-                        </p>
-                        <ul class="list mbr-fonts-style display-4">
-                            <li class="item-wrap">Similique tenetur totam vitae</li>
-                            <li class="item-wrap">Consectetur adipisicing elit</li>
-                            <li class="item-wrap">Accusamus consequuntur cumque</li>
-                            <li class="item-wrap">Error eum facilis molestiae</li>
-                        </ul>
-                    </div>
-                    <div class="mbr-section-btn">
-                        <a class="btn btn-primary-outline display-4" href="#">
-                            <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                            Buy now
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="form1 careerm5 cid-tvL1znWceg" id="form1-e">
-
-    
-
-    
-    
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <div class="map-wrapper">
-                    <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDk89J4FSunMF33ruMVWJaJht_Ro0kvoXs&amp;q=350 5th Ave, New York, NY 10118" allowfullscreen=""></iframe></div>
-                </div>
-            </div>
-            <div class="col-lg-6 mx-auto mbr-form form-wrap" data-form-type="formoid">
-                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="Gkkw9+EE/MY++icwv4M/2f38yGHJPJNeOM0UJrn8vZh3wpO5w/m3inzTRIxJdlW+puX3mdKhJD2HWlXWTS+WzsD1oF4zM380mLLDNdfpTHxD8EP5vdfkKf3+4TTlCtVh.hEfAkqZAwFhth28DpHIbEox6CqTE1n+UJ5yhW72Tk7X0vIn28EQO2Ur4uVdmwBYecgpfHxGiHxT3fuCZJMWjrP4UNIvCG+BUhxvC65h4C7klzt1XqYxVFb4uVophK7sY">
-                    <div class="row">
-                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling
-                            out the form!</div>
-                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12"> Oops...! some
-                            problem!
-                        </div>
-                    </div>
-                    <div class="dragArea row">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <h2 class="mbr-section-title mbr-fonts-style display-2">
-                                Send message
-                            </h2>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <p class="mbr-text mbr-fonts-style display-7">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet in laboriosam
-                                nam obcaecati quos ullam veniam.
-                            </p>
-                        </div>
-                        <div data-for="email" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
-                            <input type="email" name="email" placeholder="email" data-form-field="email" class="form-control display-7" value="" id="email-form1-e">
-                        </div>
-                        <div data-for="text" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
-                            <input type="text" name="text" placeholder="name" data-form-field="text" class="form-control display-7" value="" id="text-form1-e">
-                        </div>
-                        <div data-for="number" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
-                            <input type="number" name="number" placeholder="phone" data-form-field="number" class="form-control display-7" max="100" min="0" step="1" value="" id="number-form1-e">
-                        </div>
-                        <div class="col-md-auto col mbr-section-btn">
-                            <button type="submit" class="btn btn-primary-outline display-4">
-                                <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                                Send now
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section data-bs-version="5.1" class="gallery2 careerm5 cid-tvL1DeHe6M" id="gallery2-f">
 
@@ -806,7 +645,7 @@
                     </h2>
                     <a class="link-wrapper" href="#">
                         <p class="mbr-link mbr-fonts-style display-4">
-                            @mobirise
+                            @fredmindschool
                         </p>
                     </a>
                 </div>
@@ -838,7 +677,7 @@
             <div class="col-12 col-lg-2 card">
                 <a href="#">
                     <div class="image-wrapper">
-                        <img src="assets/images/image12.jpg" alt="">
+                        <img src="{{asset('ass_asset/img/image12.jpg')}}" alt="">
                         <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
                     </div>
                 </a>
@@ -859,13 +698,13 @@
                     </div>
                 </a>
             </div>
-            <div class="col-12">
+            {{-- <div class="col-12">
                 <div class="text-wrapper">
                     <p class="mbr-text mbr-fonts-style display-7">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> At, cum earum inventore itaque.
                     </p>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
@@ -881,7 +720,7 @@
         <div class="row">
             <div class="col-12 col-lg-3 col-md-6">
                 <div class="title-wrapper">
-                    <h3 class="mbr-section-title mbr-fonts-style display-5">Online<br> Mentorship<br> Program</h3>
+                    <h3 class="mbr-section-title mbr-fonts-style display-5">Fredmind<br> School<br> </h3>
                 </div>
             </div>
             <div class="col-12 col-lg-3 col-md-6">
@@ -893,12 +732,10 @@
                         Our program
                     </h4>
                     <ul class="list mbr-fonts-style display-4">
-                        <li class="item-wrap">Business</li>
-                        <li class="item-wrap">Online Courses</li>
-                        <li class="item-wrap">Communication</li>
-                        <li class="item-wrap">Lectures</li>
-                        <li class="item-wrap">Projects</li>
-                        <li class="item-wrap">Products</li>
+                        <li class="item-wrap">Engineering School</li>
+                        <li class="item-wrap">Marketing School</li>
+                        <li class="item-wrap">Data School </li>
+                        <li class="item-wrap">Design School </li>
                     </ul>
                 </div>
             </div>
@@ -912,13 +749,12 @@
                         <li class="item-wrap">Facebook</li>
                         <li class="item-wrap">Instagram</li>
                         <li class="item-wrap">Linkedin</li>
-                        <li class="item-wrap">Behance</li>
                     </ul>
                 </div>
             </div>
             <div class="col-12">
                 <p class="copyright mbr-fonts-style display-4">
-                    © Copyright 2030 Mobirise - All Rights Reserved
+                    © Copyright 2024 Fredmindschool - All Rights Reserved
                 </p>
             </div>
         </div>
