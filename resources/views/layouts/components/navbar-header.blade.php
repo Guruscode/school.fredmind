@@ -7,7 +7,7 @@
            <div class="navbar-brand d-flex d-lg-none">
                
                <span class="navbar-caption-wrap">
-                   <a class="navbar-caption display-4" href="../index.html">CareerM5
+                   <a class="navbar-caption display-4" href="../index.html">FMSchool
                    </a>
                </span>
            </div>
@@ -22,7 +22,7 @@
            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <div class="navbar-brand d-none d-lg-flex">
                
-                   <span class="navbar-caption-wrap"><a class="navbar-caption text-secondary display-4" href="../index.html">Online Mentorship Program
+                   <span class="navbar-caption-wrap"><a class="navbar-caption text-secondary display-4" href="../index.html">Fredmind School
                        </a></span>
                </div>
                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-primary display-4" href="../index.html">Home</a></li>

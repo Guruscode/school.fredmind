@@ -22,8 +22,8 @@
             </div>
             <div class="col-12 col-lg-5">
                 <div class="image-wrapper">
-                    <img src="{{asset('ass_asset/img/background1.jpg')}}" alt="">
-                    <img src="{{asset('ass_asset/img/image17.jpg')}}" alt="">
+                    <img src="{{asset('ass_asset/img/man.jpg')}}" alt="">
+                    <img src="{{asset('ass_asset/img/woman.jpg')}}" alt="">
                 </div>
             </div>
         </div>
@@ -71,10 +71,6 @@
 
 <section data-bs-version="5.1" class="features4 careerm5 cid-tvKZJyfOwh" id="features4-4">
 
-    
-
-    
-    
 
     <div class="container-fluid">
        
