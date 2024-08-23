@@ -592,7 +592,7 @@
                 <a href="#">
                     <div class="item-wrapper">
                         <div class="item-img">
-                            <img src="assets/images/image5.jpg" alt="">
+                            <img src="{{asset('ass_asset/img/image5.jpg')}}" alt="">
                             <span class="mbr-iconfont mbr-iconfont-btn mobi-mbri-play mobi-mbri"></span>
                         </div>
                     </div>
