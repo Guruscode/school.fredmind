@@ -1,133 +1,100 @@
 
-    <!-- =======================
-Footer START -->
-<footer class="pt-5">
-  <div class="container">
-      <!-- Row START -->
-      <div class="row g-4">
+<section data-bs-version="5.1" class="footer1 careerm5 cid-tvKZRxLLhs" once="footers" id="footer1-9">
 
-          <!-- Widget 1 START -->
-          <div class="col-lg-3">
-              <!-- logo -->
-              <a class="me-0" href="index.html">
-    {{-- <img class="light-mode-item h-40px" src="assets/images/logo.svg" alt="logo">
-    <img class="dark-mode-item h-40px" src="assets/images/logo-light.svg" alt="logo"> --}}
-  </a>
-              <p class="my-3">Equip yourself for a World of Opportunities</p>
-              <!-- Social media icon -->
-              <ul class="list-inline mb-0 mt-3">
-                  <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-facebook" href="#"><i class="fab fa-fw fa-facebook-f"></i></a> </li>
-                  <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-instagram" href="#"><i class="fab fa-fw fa-instagram"></i></a> </li>
-                  <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-twitter" href="#"><i class="fab fa-fw fa-twitter"></i></a> </li>
-                  <li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-linkedin" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a> </li>
-              </ul>
-          </div>
-          <!-- Widget 1 END -->
+    
 
-          <!-- Widget 2 START -->
-          <div class="col-lg-6">
-              <div class="row g-4">
-                  <!-- Link block -->
-                  <div class="col-6 col-md-4">
-                      <h5 class="mb-2 mb-md-4">Company</h5>
-                      <ul class="nav flex-column">
-                          <li class="nav-item"><a class="nav-link" href="#">Hire our Grads</a></li>
-                          <li class="nav-item"><a class="nav-link" href="#">Collaborate with us</a></li>
-                       
-                      </ul>
-                  </div>
+    
+    
 
-                  <!-- Link block -->
-                  <div class="col-6 col-md-4">
-                      <h5 class="mb-2 mb-md-4">School</h5>
-                      <ul class="nav flex-column">
-                          <li class="nav-item"><a class="nav-link" href="#">School of Engineering</a></li>
-                          <li class="nav-item"><a class="nav-link" href="#">School of Product</a></li>
-                          <li class="nav-item"><a class="nav-link" href="#">School of Data</a></li>
-                          <li class="nav-item"><a class="nav-link" href="#">School of Business</a></li>
-                          <li class="nav-item"><a class="nav-link" href="#">School of Creative Economy</a></li>
-                      </ul>
-                  </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-3 col-md-6">
+                <div class="title-wrapper">
+                    <h3 class="mbr-section-title mbr-fonts-style display-5">Fredmind<br> School<br> </h3>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6">
+                
+            </div>
+            <div class="col-12 col-lg-3 col-md-6">
+                <div class="list-wrapper">
+                    <h4 class="mbr-section-subtitle mbr-fonts-style display-7">
+                        Our program
+                    </h4>
+                    <ul class="list mbr-fonts-style display-4">
+                        <li class="item-wrap">Engineering School</li>
+                        <li class="item-wrap">Marketing School</li>
+                        <li class="item-wrap">Data School </li>
+                        <li class="item-wrap">Design School </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6">
+                <div class="soc-wrapper">
+                    <h4 class="mbr-section-subtitle mbr-fonts-style display-7">
+                        Social
+                    </h4>
+                    <ul class="list mbr-fonts-style display-4">
+                        <li class="item-wrap">Twitter</li>
+                        <li class="item-wrap">Facebook</li>
+                        <li class="item-wrap">Instagram</li>
+                        <li class="item-wrap">Linkedin</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12">
+                <p class="copyright mbr-fonts-style display-4">
+                    © Copyright 2024 Fredmindschool - All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
-                  <!-- Link block -->
-                  <div class="col-6 col-md-4">
-                      <h5 class="mb-2 mb-md-4">About us</h5>
-                      <ul class="nav flex-column">
-                          <li class="nav-item"><a class="nav-link" href="#">Our Story</a></li>
-                          <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
-                          <li class="nav-item"><a class="nav-link" href="#">Terms &amp; Conditions</a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <!-- Widget 2 END -->
 
-          <!-- Widget 3 START -->
-          <div class="col-lg-3">
-              <h5 class="mb-2 mb-md-4">Contact</h5>
-              <!-- Time -->
-              <p class="mb-2">
-                Tel: <span class="h6 fw-light ms-2">080000000000</span>
-                  <span class="d-block small">(9:AM to 6:PM WAT)</span>
-              </p>
+<script src="{{asset('ass_asset/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('ass_asset/js/smooth-scroll.js')}}"></script>
+  <script src="{{asset('ass_asset/js/index.js')}}"></script>
+  <script src="{{asset('ass_asset/js/navbar-dropdown.js')}}"></script>
+  <script src="{{asset('ass_asset/js/embla.min.js')}}"></script>
+  <script src="{{asset('ass_asset/js/script.js')}}"></script>
+  <script src="{{asset('ass_asset/js/scripts.js')}}"></script>
+  <script src="{{asset('ass_asset/js/formoid.min.js')}}"></script>
+  <!-- Bootstrap Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
-              <p class="mb-0">Email:<span class="h6 fw-light ms-2">info@fredmindschool.com</span></p>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    gsap.from("#title", { duration: 1, y: -50, opacity: 0 });
+    gsap.from("#subtitle", { duration: 1, y: 50, opacity: 0, delay: 0.5 });
+    gsap.from("#description", { duration: 1, y: 50, opacity: 0, delay: 1 });
+    gsap.from("#cta-btn", { duration: 1, scale: 0.5, opacity: 0, delay: 1.5 });
+    gsap.from(".image", { duration: 1, x: 100, opacity: 0, stagger: 0.5, delay: 2 });
+     gsap.from("#headline", { duration: 1.2, y: -50, opacity: 0 });
+    gsap.from("#subheading", { duration: 1, y: 50, opacity: 0, delay: 0.4 });
+    gsap.from("#description", { duration: 1, x: -100, opacity: 0, delay: 0.8 });
+    gsap.from("#cta-button", { duration: 1, scale: 0.8, opacity: 0, delay: 1.2 });
+    gsap.from(".image", { duration: 1, x: 100, opacity: 0, stagger: 0.5, delay: 1.6 }); // Animate Corporate Section
+    gsap.from("#corporate-title", { duration: 1, x: -100, opacity: 0 });
+    gsap.from("#corporate-description", { duration: 1, x: 100, opacity: 0, delay: 0.4 });
+    gsap.from("#corporate-button", { duration: 1, scale: 0.8, opacity: 0, delay: 0.8 });
 
-              <div class="row g-2 mt-2">
-                  <!-- Google play store button -->
-                  <div class="col-6 col-sm-4 col-md-3 col-lg-6">
-                      <a href="#"> <img src="assets/images/client/google-play.svg" alt=""> </a>
-                  </div>
-                  <!-- App store button -->
-                  <div class="col-6 col-sm-4 col-md-3 col-lg-6">
-                      <a href="#"> <img src="assets/images/client/app-store.svg" alt="app-store"> </a>
-                  </div>
-              </div>
-              <!-- Row END -->
-          </div>
-          <!-- Widget 3 END -->
-      </div>
-      <!-- Row END -->
+    // Animate Impact Section
+    gsap.from("#impact-title", { duration: 1, x: -100, opacity: 0, delay: 1.2 });
+    gsap.from("#impact-description", { duration: 1, x: 100, opacity: 0, delay: 1.6 });
+    gsap.from("#impact-button", { duration: 1, scale: 0.8, opacity: 0, delay: 2.0 });
+    gsap.from("#impact-images .image", { duration: 1, x: 100, opacity: 0, stagger: 0.5, delay: 2.4 });
 
-      <!-- Divider -->
-      <hr class="mt-4 mb-0">
+    // Animate Learning Features Section
+    gsap.from("#learning-image", { duration: 1, x: -100, opacity: 0, delay: 2.8 });
+    gsap.from("#module-1", { duration: 1, y: 50, opacity: 0, delay: 3.2 });
+    gsap.from("#module-2", { duration: 1, y: 50, opacity: 0, delay: 3.6 });
+    gsap.from("#module-3", { duration: 1, y: 50, opacity: 0, delay: 4.0 });
+    gsap.from("#module-4", { duration: 1, y: 50, opacity: 0, delay: 4.4 });
 
-      <!-- Bottom footer -->
-      <div class="py-3">
-          <div class="container px-0">
-              <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-md-left">
-                  <!-- copyright text -->
-                  <div class="text-body text-primary-hover"> © 2024 Fredmindschool. All rights reserved</div>
-                  <!-- copyright links-->
-                  <div class="justify-content-center mt-3 mt-lg-0">
-                      <ul class="nav list-inline justify-content-center mb-0">
-                        
-                          <li class="list-inline-item"><a class="nav-link" href="{{route('index.term')}}">Terms of use</a></li>
-                          <li class="list-inline-item"><a class="nav-link pe-0" href="{{route('index.privacy')}}">Privacy policy</a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</footer>
-<!-- =======================
-Footer END -->
+});
 
-<!-- Back to top -->
-<div class="back-top"><i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i></div>
-
-<!-- Bootstrap JS -->
-<script src="{{asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
-
-<!-- Vendors -->
-<script src="{{asset('assets/vendor/tiny-slider/tiny-slider.js')}}"></script>
-<script src="{{asset('assets/vendor/glightbox/js/glightbox.js')}}"></script>
-<script src="{{asset('assets/vendor/purecounterjs/dist/purecounter_vanilla.js')}}"></script>
-
-<!-- Template Functions -->
-<script src="{{asset('assets/js/functions.js')}}"></script>
-
+  </script>
 </body>
-
 </html>

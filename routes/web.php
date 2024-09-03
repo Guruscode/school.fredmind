@@ -49,6 +49,8 @@ Route::prefix('admin')->group(function () {
 
 
 Route::get('/', [PagesController::class, 'index'])->name('index.home');
+Route::get('/our-approach', [PagesController::class, 'aproach'])->name('index.approach');
+Route::get('/our-resources', [PagesController::class, 'resources'])->name('index.resources');
 Route::get('/term', [PagesController::class, 'term'])->name('index.term');
 Route::get('/privacy', [PagesController::class, 'privacy'])->name('index.privacy');
 Route::get('/scholarship', [PagesController::class, 'scholarship'])->name('index.scholarship');
@@ -59,11 +61,13 @@ Route::get('/career', [PagesController::class, 'career'])->name('index.career');
 
 Route::group(['prefix' => 'school'], function () {
   // Routes in this group will have the prefix 'api'
+  Route::get('/', [PagesController::class, 'school'])->name('index.school');
+  
   Route::get('/engineering', [PagesController::class, 'engineering'])->name('index.engineering');
-  Route::get('/engineering', [PagesController::class, 'engineering'])->name('index.engineering');
-  Route::get('/products', [PagesController::class, 'products'])->name('index.products');
+  Route::get('/marketing', [PagesController::class, 'marketing'])->name('index.marketing');
+  Route::get('/design', [PagesController::class, 'products'])->name('index.design');
   Route::get('/data', [PagesController::class, 'data'])->name('index.data');
-  Route::get('/business', [PagesController::class, 'business'])->name('index.business');
+  Route::get('/data', [PagesController::class, 'business'])->name('index.data');
   Route::get('/creative-economy', [PagesController::class, 'creative'])->name('index.creative');
 });
 

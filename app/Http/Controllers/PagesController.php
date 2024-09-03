@@ -10,14 +10,32 @@ class PagesController extends Controller
     {
         return view('pages.index');
     }
+    public function school() 
+    {
+        return view('pages.school');
+    }
+    public function aproach() 
+    {
+        return view('pages.approach');
+    }
+    public function resources() 
+    {
+        return view('pages.resources');
+    }
+    
     
     public function engineering() 
     {
-        return view('pages.index');
+        return view('pages.schools.engineering');
     }
+    public function marketing() 
+    {
+        return view('pages.schools.marketing');
+    }
+    
     public function products ()
     {
-        return view('pages.index');
+        return view('pages.schools.product');
     }
     public function why ()
     {
@@ -29,7 +47,7 @@ class PagesController extends Controller
     }
     public function business ()
     {
-        return view('pages.index');
+        return view('pages.schools.business');
     }
     public function creative ()
     {
