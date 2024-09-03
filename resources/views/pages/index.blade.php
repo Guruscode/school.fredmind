@@ -2,34 +2,27 @@
 @include('layouts.components.navbar-header')
 
 
-<section data-bs-version="5.1" class="header2 careerm5 cid-tvKZDB8m2u mbr-fullscreen" id="header2-1">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-lg-7">
-                <div class="title-wrapper">
-                    <h1 class="mbr-section-title mbr-fonts-style display-1" id="title">ACQUIRE 
-                        <br>TECH SKILLS HERE</h1>
-                    <p class="mbr-text mbr-fonts-style display-9" id="subtitle">PURELY PRACTICAL & ACCESS TO JOBS.
-                        BUILD A GLOBALLY LUCRATIVE TECH CAREER
-                    </p>
-                    <p class="mbr-text mbr-fonts-style display-7" id="description">
-                        Learn with experts | Get Certified | Access to Jobs.
-                        <br>
-                    </p>
-                    <div class="mbr-section-btn"><a class="btn btn-secondary-outline display-4" id="cta-btn" href="#">
-                            <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                            Start Learning
-                        </a></div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-5">
-                <div class="image-wrapper" id="images">
-                    <img src="{{asset('ass_asset/img/man.jpg')}}" alt="" class="image">
-                    <img src="{{asset('ass_asset/img/woman.jpg')}}" alt="" class="image">
-                </div>
-            </div>
-        </div>
-    </div>
+<section data-bs-version="5.1" class="header2 careerm5 cid-tvKZDB8m2u mbr-fullscreen" id="header2-1"  style="height: 100vh; background-image: url('{{asset('ass_asset/img/focused.jpg')}}'); background-size: cover; background-position: center;">
+
+    <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center text-lg-start glassmorphism">
+            <h1 class="display-1 font-weight-bold" style=" color:rgb(255, 255, 255) !important;t">ACQUIRE 
+                <br>TECH SKILLS HERE</h1>
+            <p class="mbr-text mbr-fonts-style display-8" style=" color:rgb(255, 255, 255) !important;t">PURELY PRACTICAL & ACCESS TO JOBS.
+                BUILD A GLOBALLY LUCRATIVE TECH CAREER</p> 
+                <p class="mbr-text mbr-fonts-style display-7"  style=" color:rgb(255, 255, 255) !important;t">
+                    Learn with experts | Get Certified | Access to Jobs.
+                   
+                </p>
+            <a href="#learn-more" class="btn btn-primary btn-lg mt-4" style=" background-color:white !important; color:black !important; border:0px solid white !important; border-radius: 20px !important">Start Learning</a>
+          </div>
+        </div> 
+        
+      
+      </div>
+
+   
 </section>
 
 <section data-bs-version="5.1" class="content7 careerm5 cid-tvL1Lf2EIE" id="content7-g">
@@ -63,7 +56,7 @@
 </section>
 
 
-<section data-bs-version="5.1" class="features02 flexm5 cid-ugTWOV2aVX" id="features02-3">
+{{-- <section data-bs-version="5.1" class="features02 flexm5 cid-ugTWOV2aVX" id="features02-3">
     
 
     
@@ -174,7 +167,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 <section data-bs-version="5.1" class="content7 careerm5 cid-tvL1Lf2EIE" id="content7-corporate">
     <div class="container-fluid">
