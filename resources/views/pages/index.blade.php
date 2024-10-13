@@ -1,785 +1,519 @@
 @include('layouts.app')
 @include('layouts.components.navbar-header')
 
+<!-- =========================
+    INTRO SECTION   
+============================== -->
 
-<section data-bs-version="5.1" class="header2 careerm5 cid-tvKZDB8m2u mbr-fullscreen" id="header2-1"  style="height: 100vh; background-image: url('{{asset('ass_asset/img/focused.jpg')}}'); background-size: cover; background-position: center;">
+<section id="intro" class="parallax-section">
+	<div class="container">
+		<div class="row">
 
-    <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 text-center text-lg-start glassmorphism">
-            <h1 class="display-1 font-weight-bold" style=" color:rgb(255, 255, 255) !important;t">ACQUIRE 
-                <br>TECH SKILLS HERE</h1>
-            <p class="mbr-text mbr-fonts-style display-8" style=" color:rgb(255, 255, 255) !important;t">PURELY PRACTICAL & ACCESS TO JOBS.
-                BUILD A GLOBALLY LUCRATIVE TECH CAREER</p> 
-                <p class="mbr-text mbr-fonts-style display-7"  style=" color:rgb(255, 255, 255) !important;t">
-                    Learn with experts | Get Certified | Access to Jobs.
-                   
+			<div class="col-md-12 col-sm-12">
+                <h1 class="wow fadeInUp" data-wow-delay="1.6s">ACQUIRE TECH SKILLS HERE
+                </h1>
+				<h3 class="wow bounceIn" data-wow-delay="0.9s">PURELY PRACTICAL & ACCESS TO JOBS.
+                    BUILD A GLOBALLY LUCRATIVE TECH CAREER
+                    </h3>
+				
+				<a href="#overview" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s">Select Course</a>
+				<a href="#register" class="btn btn-lg btn-danger smoothScroll wow fadeInUp" data-wow-delay="2.3s">Start Learning</a>
+			</div>
+
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    OVERVIEW SECTION   
+============================== -->
+<section id="overview" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
+				<h1>For Individuals</h1>
+				<p>Earn a Tech Diploma and master the skills that will help you achieve a career change, workplace promotion, or even international job opportunities.
                 </p>
-            <a href="#learn-more" class="btn btn-primary btn-lg mt-4" style=" background-color:white !important; color:black !important; border:0px solid white !important; border-radius: 20px !important">Start Learning</a>
-          </div>
-        </div> 
-        
+				<a href="#register" class="btn btn-lg btn-primary smoothScroll wow fadeInUp" data-wow-delay="2.3s">Start Learning Today</a>
+			</div>
+            
+					
+			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.9s">
+				<img src="{{asset('newasset/images/image19.jpg')}}" class="img-responsive" alt="Overview">
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    DETAIL SECTION   
+============================== -->
+<section id="detail" class="parallax-section">
+	<div class="container">
       
+		<div class="row">
+         
+
+			<div class="wow fadeInLeft col-md-4 col-sm-4" data-wow-delay="0.3s">
+				<i class="fa fa-group"></i>
+				<h3>Updated Curriculum</h3>
+				<p>Our modules are well-structured with up-to-date information, and relevant course content to align with your learning goals.  </p>
+			</div>
+
+			<div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
+				<i class="fa fa-clock-o"></i>
+				<h3>Stellar User Experience </h3>
+				<p>The functionality of our learning platform helps you learn from anywhere. We offer a virtual-first, self paced program that runs in cohorts. 
+                </p>
+			</div>
+
+			<div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.9s">
+				<i class="fa fa-microphone"></i>
+				<h3>Expert Tutors</h3>
+				<p>Our instructors/facilitators are seasoned industry leaders with relevant industry experience, academic credentials, and a strong track record in teaching the subject matter. </p>
+			</div>
+            <div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.9s">
+				<i class="fa fa-microphone"></i>
+				<h3>Progress Tracking</h3>
+				<p>Our course helps you assess your progress and provides you with real-time feedback through quizzes, assignments, or projects to gauge your understanding.</p>
+			</div>
+            <div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.9s">
+				<i class="fa fa-microphone"></i>
+				<h3>Support & Community</h3>
+				<p>You get to connect with fellow learners through discussion forums, group projects, networking events to foster collaboration.
+                </p>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    VIDEO SECTION   
+============================== -->
+<section id="video" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.3s">
+				<h2>Go from CLUELESS to TECH BRO!!!
+                </h2>
+				<h3>Hear what our students have to say from their learning experience</h3>
+				
+			</div>
+			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.6s">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rrHzvqY7YpU" allowfullscreen></iframe>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- =========================
+    SPEAKERS SECTION   
+============================== -->
+{{-- <section id="speakers" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12 wow bounceIn">
+				<div class="section-title">
+					<h2>Creative Speakers</h2>
+					<p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p>
+				</div>
+			</div>
+
+			<!-- Testimonial Owl Carousel section
+			================================================== -->
+			<div id="owl-speakers" class="owl-carousel">
+
+				<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.9s">
+					<div class="speakers-wrapper">
+						<img src="{{asset('newasset/images/speakers-img1.jpg')}}" class="img-responsive" alt="speakers">
+							<div class="speakers-thumb">
+								<h3>Jenny Green</h3>
+								<h6>UI Designer</h6>
+							</div>
+					</div>
+				</div>
+
+				<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.6s">
+					<div class="speakers-wrapper">
+						<img src="{{asset('newasset/images/speakers-img2.jpg')}}" class="img-responsive" alt="speakers">
+							<div class="speakers-thumb">
+								<h3>David Yoon</h3>
+								<h6>Creative Director</h6>
+							</div>
+					</div>
+				</div>
+
+				<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.9s">
+					<div class="speakers-wrapper">
+						<img src="{{asset('newasset/images/speakers-img3.jpg')}}" class="img-responsive" alt="speakers">
+							<div class="speakers-thumb">
+								<h3>Je Mary Lee</h3>
+								<h6>Web Specialist</h6>
+							</div>
+					</div>
+				</div>
+
+				<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.6s">
+					<div class="speakers-wrapper">
+						<img src="{{asset('newasset/images/speakers-img4.jpg')}}" class="img-responsive" alt="speakers">
+							<div class="speakers-thumb">
+								<h3>Johnathan Doe</h3>
+								<h6>Frontend Dev</h6>
+							</div>
+					</div>
+				</div>
+
+				<div class="item wow fadeInUp col-md-3 col-sm-3" data-wow-delay="0.6s">
+					<div class="speakers-wrapper">
+						<img src="{{asset('newasset/images/speakers-img5.jpg')}}" class="img-responsive" alt="speakers">
+							<div class="speakers-thumb">
+								<h3>Elite Hamilton</h3>
+								<h6>Marketing Guru</h6>
+							</div>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+</section> --}}
+
+
+<!-- =========================
+    Course SECTION   
+============================== -->
+<section id="courses" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="wow fadeInUp col-md-12 col-sm-12" data-wow-delay="0.6s">
+				<div class="section-title">
+					<h2>Our Courses</h2>
+					<p>Explore our range of courses designed to help you master skills in marketing, web development, cloud computing, and mobile app development. More exciting courses are coming soon!</p>
+				</div>
+			</div>
+
+			<div class="wow fadeInUp col-md-10 col-sm-10" data-wow-delay="0.9s">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="active"><a href="#marketing" aria-controls="marketing" role="tab" data-toggle="tab">Marketing</a></li>
+					<li><a href="#webdev" aria-controls="webdev" role="tab" data-toggle="tab">Web Development</a></li>
+					<li><a href="#cloud" aria-controls="cloud" role="tab" data-toggle="tab">Cloud Computing</a></li>
+					<li><a href="#mobile" aria-controls="mobile" role="tab" data-toggle="tab">Mobile Development</a></li>
+				</ul>
+				<!-- tab panes -->
+				<div class="tab-content">
+
+					<div role="tabpanel" class="tab-pane active" id="marketing">
+						<div class="col-md-12 col-sm-12">
+							<h3>Marketing</h3>
+							<p>Coming Soon. Stay tuned for our comprehensive marketing course covering social media, digital strategies, and more!</p>
+						</div>
+					</div>
+
+					<div role="tabpanel" class="tab-pane" id="webdev">
+						<div class="col-md-12 col-sm-12">
+							<h3>Web Development</h3>
+							<p>Coming Soon. Learn about front-end, back-end, and full-stack web development with hands-on projects and tutorials!</p>
+						</div>
+					</div>
+
+					<div role="tabpanel" class="tab-pane" id="cloud">
+						<div class="col-md-12 col-sm-12">
+							<h3>Cloud Computing</h3>
+							<p>Coming Soon. Dive into the world of cloud infrastructure, platforms, and services with this upcoming course!</p>
+						</div>
+					</div>
+
+					<div role="tabpanel" class="tab-pane" id="mobile">
+						<div class="col-md-12 col-sm-12">
+							<h3>Mobile Development</h3>
+							<p>Coming Soon. Build your own mobile apps for Android and iOS with our in-depth mobile development course!</p>
+						</div>
+					</div>
+
+				</div>
+
+		</div>
+	</div>
+</section>
+
+
+
+<!-- =========================
+   LEARNING OPTIONS SECTION   
+============================== -->
+<section id="register" class="parallax-section" style="padding: 50px 0; background-color: #f8f9fa;">
+  <div class="container">
+    <div class="row">
+
+      <!-- Section Title -->
+      <div class="wow fadeInUp col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 text-center" data-wow-delay="0.4s">
+        <div class="section-title" style="margin-bottom: 40px;">
+          <h2 style="color: rgb(242, 84, 95); font-weight: bold;">Learning <span style="color: #ffffff;">Options</span></h2>
+          <p style="color: #fffffff; font-size: 1.2em;">Choose the learning option that best suits you from the formats below.</p>
+        </div>
       </div>
 
-   
-</section>
-
-<section data-bs-version="5.1" class="content7 careerm5 cid-tvL1Lf2EIE" id="content7-g">
-    <div class="container-fluid">
-        <div class="row flex-row-reverse">
-            <div class="col-12 col-lg-7 text-wrap">
-                <div class="text-wrapper">
-                    <h2 class="mbr-section-title mbr-fonts-style display-3" id="headline">Building future-proof Talent on a Global Scale</h2>
-                    <p class="mbr-text mbr-fonts-style display-1" id="subheading">
-                        For Individuals
-                    </p>
-                    <p class="mbr-cit mbr-fonts-style display-4" id="description">
-                        Earn a Tech Diploma and master the skills that will help you achieve a career change, workplace promotion, or even international job opportunities.
-                    </p>
-                    <div class="mbr-section-btn">
-                        <a class="btn btn-primary-outline display-4" id="cta-button" href="#">
-                            <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                            Start Learning Today
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-5">
-                <div class="image-wrapper" id="images">
-                    <img src="{{asset('ass_asset/img/image19.jpg')}}" alt="" class="image">
-                    <img src="{{asset('ass_asset/img/posing.jpg')}}" alt="" class="image">
-                </div>
-            </div>
+      <!-- Learning Option: Live Classes -->
+      <div class="col-md-6 col-sm-6">
+        <div class="card learning-option-card wow fadeInUp" data-wow-delay="0.6s" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: none; margin-bottom: 30px;">
+          <div class="card-body" style="padding: 20px;">
+            <img src="{{asset('newasset/images/p2.png')}}" alt="Live Classes" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+            <h3 class="card-title" style="color: rgb(242, 84, 95); font-weight: bold;">Live Classes</h3>
+            <p style="color: #ffffff;">Take advantage of instructor-led, live classes with onsite and virtual options. Share a hands-on classroom with students in a cohort-based training.</p>
+            <a href="#" class="btn btn-warning" style="color: white; background-color:rgb(242, 84, 95) !important; border:rgb(242, 84, 95) !important">Start Learning</a>
+          </div>
         </div>
+      </div>
+
+      <!-- Learning Option: Self-Paced Learning (LooP) -->
+      <div class="col-md-6 col-sm-6">
+        <div class="card learning-option-card wow fadeInUp" data-wow-delay="0.8s" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: none;">
+          <div class="card-body" style="padding: 20px;">
+            <img src="{{asset('newasset/images/p1.png')}}" alt="Self-Paced Learning" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+            <h3 class="card-title" style="color: rgb(242, 84, 95); font-weight: bold;">Self-Paced Learning (LooP)</h3>
+            <p style="color: #ffffff;">Ideal for you if you prefer to learn at your own time. Pluralcode’s LMS & bite-sized topics, assessments, and projects allow you to earn your Diploma without stress.</p>
+            <span class="badge badge-secondary" style="background-color: rgb(242, 84, 95); color: white;">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
 
-{{-- <section data-bs-version="5.1" class="features02 flexm5 cid-ugTWOV2aVX" id="features02-3">
-    
+<!-- =========================
+    FAQ SECTION   
+============================== -->
+<section id="faq" class="parallax-section">
+	<div class="container">
+		<div class="row">
 
-    
-    
+			<!-- Section title -->
+			<div class="wow bounceIn col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 text-center">
+				<div class="section-title">
+					<h2>Do you have Questions?</h2>
+					<p>Here are some frequently asked questions to help you understand more about our courses.</p>
+				</div>
+			</div>
 
-    <div class="container-fluid">
-        <div class="row items-wrap">
-            <div class="col-12 col-lg-10">
-                <div class="content-wrapper">
-                    <h2 class="mbr-section-title mbr-fonts-style display-5">
-                        <strong>Tools used by a web design agency</strong>
-                    </h2>
-                </div>
-            </div>
-            <div class="col-12 col-lg-10">
-                <div class="items-wrapper">
-                    <div class="item features-without-image">
-                        <div class="item-wrapper card_1">
-                            <div class="icon-wrapper">
-                                <span class="mbr-iconfont mobi-mbri-devices mobi-mbri"></span>
-                            </div>
-                            <div class="card-box">
-                                <div class="title-wrap">
-                                    <h4 class="item-title mbr-fonts-style display-4">
-                                        <strong>SKETCH</strong>
-                                    </h4>
-                                    <p class="item-text mbr-fonts-style display-4">
-                                        A powerful design tool specifically for macOS that is widely used for creating user
-                                        interfaces, websites, and icons.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item features-without-image">
-                        <div class="item-wrapper card_2">
-                            <div class="icon-wrapper">
-                                <span class="mbr-iconfont mobi-mbri-drag-n-drop-2 mobi-mbri"></span>
-                            </div>
-                            <div class="card-box">
-                                <div class="title-wrap">
-                                    <h4 class="item-title_2 mbr-fonts-style display-4">
-                                        <strong>FIGMA</strong>
-                                    </h4>
-                                    <p class="item-text_2 mbr-fonts-style display-4">
-                                        A cloud-based design tool that allows for real-time collaboration. Figma is popular for
-                                        its ability to facilitate team collaboration on design projects.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item features-without-image">
-                        <div class="item-wrapper card_1">
-                            <div class="icon-wrapper">
-                                <span class="mbr-iconfont mobi-mbri-code mobi-mbri"></span>
-                            </div>
-                            <div class="card-box">
-                                <div class="title-wrap">
-                                    <h4 class="item-title mbr-fonts-style display-4">
-                                        <strong>VISUAL STUDIO CODE</strong>
-                                    </h4>
-                                    <p class="item-text mbr-fonts-style display-4">
-                                        A lightweight but powerful code editor from Microsoft, equipped with built-in support
-                                        for JavaScript, TypeScript, and Node.js.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item features-without-image">
-                        <div class="item-wrapper card_1">
-                            <div class="icon-wrapper">
-                                <span class="mbr-iconfont mobi-mbri-code mobi-mbri"></span>
-                            </div>
-                            <div class="card-box">
-                                <div class="title-wrap">
-                                    <h4 class="item-title mbr-fonts-style display-4">
-                                        <strong>VISUAL STUDIO CODE</strong>
-                                    </h4>
-                                    <p class="item-text mbr-fonts-style display-4">
-                                        A lightweight but powerful code editor from Microsoft, equipped with built-in support
-                                        for JavaScript, TypeScript, and Node.js.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item features-without-image">
-                        <div class="item-wrapper card_1">
-                            <div class="icon-wrapper">
-                                <span class="mbr-iconfont mobi-mbri-code mobi-mbri"></span>
-                            </div>
-                            <div class="card-box">
-                                <div class="title-wrap">
-                                    <h4 class="item-title mbr-fonts-style display-4">
-                                        <strong>VISUAL STUDIO CODE</strong>
-                                    </h4>
-                                    <p class="item-text mbr-fonts-style display-4">
-                                        A lightweight but powerful code editor from Microsoft, equipped with built-in support
-                                        for JavaScript, TypeScript, and Node.js.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> --}}
+			<div class="wow fadeInUp col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10" data-wow-delay="0.9s">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-<section data-bs-version="5.1" class="content7 careerm5 cid-tvL1Lf2EIE" id="content7-corporate">
-    <div class="container-fluid">
-        <div class="row flex-row-reverse">
-            <div class="col-12 col-lg-7 text-wrap">
-                <div class="text-wrapper">
-                    <p class="mbr-text mbr-fonts-style display-1" id="corporate-title">For Corporates</p>
-                    <p class="mbr-cit mbr-fonts-style display-4" id="corporate-description">
-                        Build your dream team with Fredmind Digital School. Hire our top graduates to bring your vision to life.
-                    </p>
-                    <div class="mbr-section-btn">
-                        <a class="btn btn-primary-outline display-4" id="corporate-button" href="#">
-                            <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                            Hire Our Graduates
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+					<!-- Question 1: How can I enroll? -->
+  					<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingOne">
+      						<h4 class="panel-title">
+        						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          							How can I enroll?
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      						<div class="panel-body">
+        						<p>All you have to do is sign up <a href="#school-page-link">here</a> and follow the instructions!</p>
+      						</div>
+   						 </div>
+ 					</div>
+
+					<!-- Question 2: I’m not sure what course to take, what do I do? -->
+    				<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingTwo">
+      						<h4 class="panel-title">
+        						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          							I’m not sure what course to take, what do I do?
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      						<div class="panel-body">
+                            	<p>We have created this guide to help you through this process. If you’re still unsure, you can reach out to us at <a href="mailto:info@fredmindschool.com">info@fredmindschool.com</a>.</p>
+      						</div>
+   						 </div>
+ 					</div>
+
+					<!-- Question 3: What qualification do I need to get accepted? -->
+ 					<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingThree">
+      						<h4 class="panel-title">
+        						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          							What qualification do I need to get accepted?
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      						<div class="panel-body">
+                            	<p>No qualification is needed at all. Come as you are!</p>
+      						</div>
+   						 </div>
+ 					 </div>
+
+					 <!-- Question 4: How much is tuition? -->
+ 					<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingFour">
+      						<h4 class="panel-title">
+        						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          							How much is tuition?
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      						<div class="panel-body">
+                            	<p>Tuition varies by course. Check out the pricing <a href="#tuition-page-link">here</a>.</p>
+      						</div>
+   						 </div>
+ 					 </div>
+
+					 <!-- Question 5: Can I start classes immediately after I enroll? -->
+ 					<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingFive">
+      						<h4 class="panel-title">
+        						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          							Can I start classes immediately after I enroll?
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      						<div class="panel-body">
+                            	<p>We run a cohort-based program, which means you can sign up, but classes will only start with the next cohort.</p>
+      						</div>
+   						 </div>
+ 					 </div>
+
+					 <!-- Question 6: Can I get a refund of my tuition fee? -->
+ 					<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingSix">
+      						<h4 class="panel-title">
+        						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          							Can I get a refund of my tuition fee?
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+      						<div class="panel-body">
+                            	<p>No, you can’t get a refund, but you can transfer your enrollment to another course within the school.</p>
+      						</div>
+   						 </div>
+ 					 </div>
+
+ 				 </div>
+			</div>
+
+		</div>
+	</div>
 </section>
 
-<section data-bs-version="5.1" class="content7 careerm5 cid-tvL1Lf2EIE" id="content7-impact">
-    <div class="container-fluid">
-        <div class="row flex-row-reverse">
-            <div class="col-12 col-lg-7 text-wrap">
-                <div class="text-wrapper">
-                    <p class="mbr-text mbr-fonts-style display-1" id="impact-title">For Impact</p>
-                    <p class="mbr-cit mbr-fonts-style display-4" id="impact-description">
-                        Fredmind Digital School’s Scholarship Program is committed to providing free tech education to ten thousand underprivileged young Africans.
-                    </p>
-                    <div class="mbr-section-btn">
-                        <a class="btn btn-primary-outline display-4" id="impact-button" href="#">
-                            <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                            Collaborate With Us
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-5">
-                <div class="image-wrapper" id="impact-images">
-                    <img src="{{asset('ass_asset/img/image19.jpg')}}" alt="" class="image">
-                    <img src="{{asset('ass_asset/img/library.jpg')}}" alt="" class="image">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- =========================
+    VENUE SECTION   
+============================== -->
+<section id="venue" class="parallax-section">
+	<div class="container">
+		<div class="row">
 
-<section data-bs-version="5.1" class="features4 careerm5 cid-tvKZJyfOwh" id="features4-learning">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-lg-6 card">
-                <div class="image-wrapper" id="learning-image">
-                    <img src="{{asset('ass_asset/img/focused.jpg')}}" alt="">
-                </div>
-            </div>
-            <div class="counter-container col-12 col-lg-6 card" id="learning-content">
-                <div class="card-wrapper" id="module-1">
-                    <p class="mbr-text mbr-fonts-style display-8">
-                        Our modules are well-structured with up-to-date information, and relevant course content to align with your learning goals.
-                    </p>
-                </div>
-                <div class="card-wrapper" id="module-2">
-                    <p class="mbr-text mbr-fonts-style display-8">
-                        The functionality of our learning platform helps you learn from anywhere. We offer a virtual-first, self-paced program that runs in cohorts.
-                    </p>
-                </div>
-                <div class="card-wrapper" id="module-3">
-                    <p class="mbr-text mbr-fonts-style display-8">
-                        Our instructors/facilitators are seasoned industry leaders with relevant industry experience, academic credentials, and a strong track record in teaching the subject matter.
-                    </p>
-                </div>
-                <div class="card-wrapper" id="module-4">
-                    <p class="mbr-text mbr-fonts-style display-8">
-                        Our course helps you assess your progress and provides you with real-time feedback through quizzes, assignments, or projects to gauge your understanding.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+			<div class="wow fadeInLeft col-md-offset-1 col-md-5 col-sm-8" data-wow-delay="0.9s">
+				<h2>Venue</h2>
+				<p>Join us at our on-site venue for an immersive experience, where you can engage with the courses and instructors directly.</p>
+				<h4>Zone 5, Novare Central Office</h4>
+  				<h4>Wuse, Abuja</h4>
+  				<h4>+234 810 931 4651</h4>
+			</div>
+
+		</div>
+	</div>
 </section>
 
 
+<!-- =========================
+    SPONSORS SECTION   
+============================== -->
+<section id="sponsors" class="parallax-section">
+	<div class="container">
+		<div class="row">
 
-<section data-bs-version="5.1" class="features7 careerm5 cid-tvKZGuz1CB" id="features7-2">
+			<div class="wow bounceIn col-md-12 col-sm-12">
+				<div class="section-title">
+					<h2>Our Sponsors</h2>
+					{{-- <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet.</p> --}}
+				</div>
+			</div>
 
-    
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-xs-6" data-wow-delay="0.3s">
+				<img src="{{asset('newasset/images/sponsor-img1.jpg')}}" class="img-responsive" alt="sponsors">	
+			</div>
 
-    
-    
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-xs-6" data-wow-delay="0.6s">
+				<img src="{{asset('newasset/images/sponsor-img2.jpg')}}" class="img-responsive" alt="sponsors">	
+			</div>
 
-    <div class="container">
-        <h2 class="mbr-section-title mbr-fonts-style display-1">Work with Us!</h2>
-        <p  class="mbr-section-title mbr-fonts-style display-6">Want to shape the future of work with us?
-        </p>
-        <br><br><br>
-        <div class="row">
-            <div class="col-12 col-lg-4 item features-image">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="{{asset('ass_asset/img/laptop.jpg')}}" alt="">
-                    </div>
-                </div>
-               
-                <div class="item-content">
-                    <h3 class="mbr-card-title mbr-fonts-style display-5">
-                        Hire our grads 
-                    </h3>
-                    
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 card item features-image">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="{{asset('ass_asset/img/snacks.jpg')}}" alt="">
-                    </div>
-                </div>
-                <div class="item-content">
-                    <h3 class="mbr-card-title mbr-fonts-style display-5">
-                        Train your in-house team
-                    </h3>
-                   
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 item features-image">
-                <div class="item-wrapper">
-                    <div class="item-img">
-                        <img src="{{asset('ass_asset/img/bed.jpg')}}" alt="">
-                    </div>
-                </div>
-                <div class="item-content">
-                    <h3 class="mbr-card-title mbr-fonts-style display-5">
-                        Sponsor an aspiring techie
-                    </h3>
-                   
-                </div>
-            </div>
-        </div>
-        <div class="mbr-section-btn">
-            <a class="btn btn-primary-outline display-4" href="#">
-                <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                Let’s Work>> 
-            </a>
-        </div>
-    </div>
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-xs-6" data-wow-delay="0.9s">
+				<img src="{{asset('newasset/images/sponsor-img3.jpg')}}" class="img-responsive" alt="sponsors">	
+			</div>
+
+			<div class="wow fadeInUp col-md-3 col-sm-6 col-xs-6" data-wow-delay="1s">
+				<img src="{{asset('newasset/images/sponsor-img4.jpg')}}" class="img-responsive" alt="sponsors">	
+			</div>
+
+		</div>
+	</div>
 </section>
 
 
+<!-- =========================
+    CONTACT SECTION   
+============================== -->
+<section id="contact" class="parallax-section">
+	<div class="container">
+		<div class="row">
 
+			<div class="wow fadeInUp col-md-offset-1 col-md-5 col-sm-6" data-wow-delay="0.6s">
+				<div class="contact_des">
+					<h3>Become a Tutor</h3>
+<p>Are you passionate about teaching and eager to share your knowledge? Join our team of expert tutors and inspire the next generation of learners. you can make a real impact by becoming a tutor with us.</p>
 
-<section data-bs-version="5.1" class="slider2 mbr-embla careerm5 cid-tvKZLU2Jrp" id="slider2-5">
-    
+<h4>Why Become a Tutor with Us?</h4>
+<ul>
+  <li><strong>1. Flexible Schedule:</strong> Teach at your convenience with flexible hours that fit your lifestyle.</li>
+  <li><strong>2. Competitive Pay:</strong> Earn competitive compensation for your expertise and time.</li>
+  <li><strong>3. Global Community:</strong> Connect with a diverse group of learners from around the world and expand your professional network.</li>
 
-    
-    
-    <div class="container-fluid">
-        <div class="position-relative row">
-            <div class="col-12">
-                <div class="title-wrapper">
-                    <h2 class="mbr-section-title mbr-fonts-style display-2">
-                        school news
-                    </h2>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="embla" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps" data-loop="true" data-auto-play="true" data-auto-play-interval="4" data-draggable="true">
-                    <div class="embla__viewport">
-                        <div class="embla__container">
-                            <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
-                                <div class="card-wrap">
-                                    <a href="#">
-                                        <div class="item-wrapper position-relative">
-                                            <div class="image-wrap">
-                                                <img src="{{asset('ass_asset/img/image18.jpg')}}" alt="">
-                                                <p class="mbr-date mbr-fonts-style display-2">
-                                                    09.
-                                                    <span>March, 2030</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content-wrap">
-                                            <p class="mbr-desc mbr-fonts-style display-4">
-                                                courses | coaching | news
-                                            </p>
-                                            <p class="mbr-text mbr-fonts-style display-7">
-                                                Repellat sit tempore voluptates
-                                            </p>
-                                            <span class="mmobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
+</ul>
 
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
-                                <div class="card-wrap">
-                                    <a href="#">
-                                        <div class="item-wrapper position-relative">
-                                            <div class="image-wrap">
-                                                <img src="{{asset('ass_asset/img/image14.jpg')}}" alt="">
-                                                <p class="mbr-date mbr-fonts-style display-2">
-                                                    18.
-                                                    <span>March, 2030</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content-wrap">
-                                            <p class="mbr-desc mbr-fonts-style display-4">
-                                                courses | coaching | news
-                                            </p>
-                                            <p class="mbr-text mbr-fonts-style display-7">
-                                                Possimus qui rerum similique sit
-                                            </p>
-                                            <span class="mmobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
-                                <div class="card-wrap">
-                                    <a href="#">
-                                        <div class="item-wrapper position-relative">
-                                            <div class="image-wrap">
-                                                <img src="{{asset('ass_asset/img/image13.jpg')}}" alt="">
-                                                <p class="mbr-date mbr-fonts-style display-2">
-                                                    23.
-                                                    <span>March, 2030</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content-wrap">
-                                            <p class="mbr-desc mbr-fonts-style display-4">
-                                                courses | coaching | news
-                                            </p>
-                                            <p class="mbr-text mbr-fonts-style display-7">
-                                                Et numquam sequi in placeat tempora
-                                            </p>
-                                            <span class="mmobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
-                                <div class="card-wrap">
-                                    <a href="#">
-                                        <div class="item-wrapper position-relative">
-                                            <div class="image-wrap">
-                                                <img src="{{asset('ass_asset/img/image19.jpg')}}" alt="">
-                                                <p class="mbr-date mbr-fonts-style display-2">
-                                                    01.
-                                                    <span>April, 2030</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content-wrap">
-                                            <p class="mbr-desc mbr-fonts-style display-4">
-                                                courses | coaching | news
-                                            </p>
-                                            <p class="mbr-text mbr-fonts-style display-7">
-                                                Sint temporibus ut vitae voluptate
-                                            </p>
-                                            <span class="mmobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
-                                <div class="card-wrap">
-                                    <a href="#">
-                                        <div class="item-wrapper position-relative">
-                                            <div class="image-wrap">
-                                                <img src="{{asset('ass_asset/img/image5.jpg')}}" alt="">
-                                                <p class="mbr-date mbr-fonts-style display-2">
-                                                    05.
-                                                    <span>April, 2030</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content-wrap">
-                                            <p class="mbr-desc mbr-fonts-style display-4">
-                                                courses | coaching | news
-                                            </p>
-                                            <p class="mbr-text mbr-fonts-style display-7">
-                                                Puod rem reprehenderit, saepe sed
-                                            </p>
-                                            <span class="mmobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
-                                <div class="card-wrap">
-                                    <a href="#">
-                                        <div class="item-wrapper position-relative">
-                                            <div class="image-wrap">
-                                                <img src="{{asset('ass_asset/img/image19.jpg')}}" alt="">
-                                                <p class="mbr-date mbr-fonts-style display-2">
-                                                    09.
-                                                    <span>March, 2030</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content-wrap">
-                                            <p class="mbr-desc mbr-fonts-style display-4">
-                                                courses | coaching | news
-                                            </p>
-                                            <p class="mbr-text mbr-fonts-style display-7">
-                                                Quae quibusdam rerum velit
-                                            </p>
-                                            <span class="mmobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
-                                <div class="card-wrap">
-                                    <a href="#">
-                                        <div class="item-wrapper position-relative">
-                                            <div class="image-wrap">
-                                                <img src="{{asset('ass_asset/img/image2.jpg')}}" alt="">
-                                                <p class="mbr-date mbr-fonts-style display-2">
-                                                    11.
-                                                    <span>March, 2030</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="content-wrap">
-                                            <p class="mbr-desc mbr-fonts-style display-4">
-                                                courses | coaching | news
-                                            </p>
-                                            <p class="mbr-text mbr-fonts-style display-7">
-                                                Officiis sit unde velit
-                                            </p>
-                                            <span class="mmobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="embla__button embla__button--prev">
-                        <span class="mbr-iconfont mobi-mbri-left mobi-mbri" aria-hidden="true"></span>
-                        <span class="sr-only visually-hidden visually-hidden">Previous</span>
-                    </button>
-                    <button class="embla__button embla__button--next">
-                        <span class="mbr-iconfont mobi-mbri-right mobi-mbri" aria-hidden="true"></span>
-                        <span class="sr-only visually-hidden visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
+<p>Ready to make a difference? Click the link below to learn more and start your journey as a tutor today.</p>
+
+<a href="link_to_become_tutor_page" class="btn btn-danger">Learn More</a>
+
+				</div>
+			</div>
+<br><br><br><br>
+				<div class="wow fadeInUp col-md-5 col-sm-6" data-wow-delay="0.9s">
+					<div class="contact_detail">
+						<div class="section-title">
+							<h2>Become a Tutor</h2>
+						</div>
+						<p>If you're passionate about teaching and want to share your knowledge with eager students, apply to become a tutor with us today! You can help shape future minds.</p>
+						<a href="link_to_become_tutor_page" class="btn btn-danger">Apply Now</a>
+					</div>
+				</div>
+		</div>
+	</div>
 </section>
 
-<section data-bs-version="5.1" class="gallery1 careerm5 cid-tvKZN5BrCX" id="gallery1-6">
-
-
-    
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="title-wrapper">
-                    <h2 class="mbr-section-title mbr-fonts-style display-2">
-                      Our Latest Graduate
-                    </h2>
-                </div>
-            </div>
-            <div class="col-12 col-lg-3 card">
-                <div class="image-wrapper">
-                    <img src="{{asset('ass_asset/img/image3.jpg')}}" alt="">
-                </div>
-            </div>
-            <div class="col-12 col-lg-3 card">
-                <div class="image-wrapper">
-                    <img src="{{asset('ass_asset/img/image10.jpg')}}" alt="">
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 card">
-                <div class="image-wrapper">
-                    <img src="{{asset('ass_asset/img/image1.jpg')}}" alt="">
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 card">
-                <div class="image-wrapper">
-                    <img src="{{asset('ass_asset/img/image19.jpg')}}" alt="">
-                </div>
-            </div>
-            <div class="col-12 col-lg-3 card">
-                <div class="image-wrapper">
-                    <img src="{{asset('ass_asset/img/image8.jpg')}}" alt="">
-                </div>
-            </div>
-            <div class="col-12 col-lg-3 card">
-                <div class="image-wrapper">
-                    <img src="{{asset('ass_asset/img/image18.jpg')}}" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-{{-- <section data-bs-version="5.1" class="content6 careerm5 cid-tvL1iXbRI3" id="content6-b">
-
-    
-
-    
-    
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="text-wrapper">
-                    <h3 class="mbr-text mbr-fonts-style display-5">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad assumenda blanditiis
-                        consequuntur distinctio dolore earum, eligendi enim hic impedit in ipsum iure odit quod saepe,
-                        unde velit. Cupiditate, dolores.
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> --}}
-
-<section data-bs-version="5.1" class="features6 careerm5 cid-tvL1pwI2jt" id="features6-d">
-
-    
-
-    
-    
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="title-wrapper">
-                    <h2 class="mbr-section-title mbr-fonts-style display-2">
-                        Audio lectures
-                    </h2>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 item features-image">
-                <a href="#">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="{{asset('ass_asset/img/image17.jpg')}}" alt="">
-                            <span class="mbr-iconfont mbr-iconfont-btn mobi-mbri-play mobi-mbri"></span>
-                        </div>
-                    </div>
-                    <div class="item-content">
-                        <div class="item-time">
-                            <div class="item-time-wrap">
-                                <span class="icon-time mbr-iconfont mbr-iconfont-btn mbrib-video"></span>
-                                <p class="mbr-time mbr-fonts-style display-4">
-                                    9:00
-                                </p>
-                            </div>
-                        </div>
-                        <h3 class="mbr-card-title mbr-fonts-style display-5">
-                            Quam quo saepe totam veniam
-                        </h3>
-                        <p class="mbr-desc mbr-fonts-style display-4">
-                            By Ray Miller
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-lg-4 card item features-image">
-                <a href="#">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="{{asset('ass_asset/img/image12.jpg')}}" alt="">
-                            <span class="mbr-iconfont mbr-iconfont-btn mobi-mbri-play mobi-mbri"></span>
-                        </div>
-                    </div>
-                    <div class="item-content">
-                        <div class="item-time">
-                            <div class="item-time-wrap">
-                                <span class="icon-time mbr-iconfont mbr-iconfont-btn mbrib-video"></span>
-                                <p class="mbr-time mbr-fonts-style display-4">
-                                    10:00
-                                </p>
-                            </div>
-                        </div>
-                        <h3 class="mbr-card-title mbr-fonts-style display-5">
-                            Reiciendis reprehenderit
-                        </h3>
-                        <p class="mbr-desc mbr-fonts-style display-4">
-                            By Eileen Fisher
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-lg-4 item features-image">
-                <a href="#">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="{{asset('ass_asset/img/image5.jpg')}}" alt="">
-                            <span class="mbr-iconfont mbr-iconfont-btn mobi-mbri-play mobi-mbri"></span>
-                        </div>
-                    </div>
-                    <div class="item-content">
-                        <div class="item-time">
-                            <div class="item-time-wrap">
-                                <span class="icon-time mbr-iconfont mbr-iconfont-btn mbrib-video"></span>
-                                <p class="mbr-time mbr-fonts-style display-4">
-                                    12:30
-                                </p>
-                            </div>
-                        </div>
-                        <h3 class="mbr-card-title mbr-fonts-style display-5">
-                            Libero maiores numquam ratione
-                        </h3>
-                        <p class="mbr-desc mbr-fonts-style display-4">
-                            By James Owens
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12">
-                <div class="mbr-section-btn">
-                    <a class="btn btn-primary-outline display-4" href="#">
-                        <span class="mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn"></span>
-                        See all
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-<section data-bs-version="5.1" class="gallery2 careerm5 cid-tvL1DeHe6M" id="gallery2-f">
-
-    
-
-    
-    
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="title-wrapper">
-                    <h2 class="mbr-section-title mbr-fonts-style display-2">
-                        Follow us now
-                    </h2>
-                    <a class="link-wrapper" href="#">
-                        <p class="mbr-link mbr-fonts-style display-4">
-                            @fredmindschool
-                        </p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-lg-2 card">
-                <a href="#">
-                    <div class="image-wrapper">
-                        <img src="{{asset('ass_asset/img/image2.jpg')}}" alt="">
-                        <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-lg-2 card">
-                <a href="#">
-                    <div class="image-wrapper">
-                        <img src="{{asset('ass_asset/img/image4.jpg')}}" alt="">
-                        <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-lg-2 card">
-                <a href="#">
-                    <div class="image-wrapper">
-                        <img src="{{asset('ass_asset/img/image5.jpg')}}" alt="">
-                        <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-lg-2 card">
-                <a href="#">
-                    <div class="image-wrapper">
-                        <img src="{{asset('ass_asset/img/image12.jpg')}}" alt="">
-                        <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-lg-2 card">
-                <a href="#">
-                    <div class="image-wrapper">
-                        <img src="{{asset('ass_asset/img/image14.jpg')}}" alt="">
-                        <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-lg-2 card">
-                <a href="#">
-                    <div class="image-wrapper">
-                        <img src="{{asset('ass_asset/img/image6.jpg')}}" alt="">
-                        <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
-                    </div>
-                </a>
-            </div>
-            {{-- <div class="col-12">
-                <div class="text-wrapper">
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> At, cum earum inventore itaque.
-                    </p>
-                </div>
-            </div> --}}
-        </div>
-    </div>
-</section>
 
 
 @include('layouts.components.footer')
