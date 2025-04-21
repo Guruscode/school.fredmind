@@ -23,8 +23,9 @@
 				<li><a href="#overview" class="smoothScroll">School </a></li>
 				<li><a href="#courses" class="smoothScroll"> Resources</a></li>
 				<li><a href="#contact" class="smoothScroll">Work with Us </a></li>
-			
+				
 			</ul>
+		
 
 		</div>
 

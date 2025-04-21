@@ -276,7 +276,7 @@
             <img src="{{asset('newasset/images/p2.png')}}" alt="Live Classes" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
             <h3 class="card-title" style="color: rgb(242, 84, 95); font-weight: bold;">Live Classes</h3>
             <p style="color: #ffffff;">Take advantage of instructor-led, live classes with onsite and virtual options. Share a hands-on classroom with students in a cohort-based training.</p>
-            <a href="#" class="btn btn-warning" style="color: white; background-color:rgb(242, 84, 95) !important; border:rgb(242, 84, 95) !important">Start Learning</a>
+            <a href="{{route('student.register.form')}}" class="btn btn-warning" style="color: white; background-color:rgb(242, 84, 95) !important; border:rgb(242, 84, 95) !important">Start Learning</a>
           </div>
         </div>
       </div>
