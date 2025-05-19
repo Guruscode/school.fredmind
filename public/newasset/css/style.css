@@ -142,7 +142,7 @@ footer {
 
 
 /*---------------------------------------
-    Preloader section              
+    Preloader section       v       
 -----------------------------------------*/
 .preloader {
   position: fixed;
@@ -194,19 +194,18 @@ footer {
 -----------------------------------------*/
 .custom-navbar {
     margin-bottom: 0;
-    background-color: #fff;
+    background-color: #000;
 }
 
 .custom-navbar .navbar-brand {
-    color: #000;
-    font-weight: 600;
+    color: #fff;
+    font-weight: 900;
     font-size: 3rem;
     line-height: 40px;
 }
 
 .custom-navbar .nav li a {
-    color: #000000;
- 
+    color: #fff;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.6px;
@@ -241,7 +240,7 @@ footer {
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #000000;
+    background: #fff;
     border-color: transparent;
 }
 
@@ -264,21 +263,13 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../../assets/medium.jpg') 50% 0 repeat-y fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    color: #ffffff;
-    display: -webkit-box;
-    display: -webkit-flex;
-     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-     -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-    height: 100vh;
-    text-align: center;
+  background: url('../../prod/image4.jpg') center center / cover no-repeat fixed;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
 }
 
 #intro h3 {

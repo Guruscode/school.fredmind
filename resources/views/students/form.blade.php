@@ -12,454 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #4a6bff;
-            --primary-hover: #3a56d4;
-            --secondary-color: #2D3142;
-            --accent-color: #00c9a7;
-            --accent-hover: #00b395;
-            --text-color: #2D3142;
-            --light-bg: #f8fafc;
-            --border-color: #e2e8f0;
-            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            --card-shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--light-bg);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        /* Header Section */
-        .header {
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            margin-bottom: 40px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('https://source.unsplash.com/random/1600x900?technology,education,code') center/cover;
-            opacity: 0.1;
-            z-index: 1;
-        }
-
-        .header-content {
-            position: relative;
-            z-index: 2;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            letter-spacing: -0.5px;
-        }
-
-        .header p {
-            font-size: 1.1rem;
-            font-weight: 400;
-            opacity: 0.9;
-        }
-
-        /* Form Container */
-        .form-container {
-            background: white;
-            border-radius: 12px;
-            box-shadow: var(--card-shadow);
-            padding: 30px;
-            margin-bottom: 30px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .form-container:hover {
-            box-shadow: var(--card-shadow-hover);
-            transform: translateY(-2px);
-        }
-
-        .form-section {
-            padding: 20px 0;
-        }
-
-        .form-section h3 {
-            font-weight: 600;
-            color: var(--primary-color);
-            margin-bottom: 25px;
-            position: relative;
-            padding-bottom: 10px;
-            font-size: 1.4rem;
-        }
-
-        .form-section h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background: var(--primary-color);
-            border-radius: 3px;
-        }
-
-        /* Form Elements */
-        .form-control, .form-select {
-            border-radius: 8px;
-            padding: 12px 15px;
-            border: 1px solid var(--border-color);
-            transition: all 0.3s ease;
-            font-size: 0.95rem;
-        }
-
-        .form-control:focus, .form-select:focus {
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(74, 107, 255, 0.15);
-        }
-
-        .form-label {
-            font-weight: 500;
-            margin-bottom: 8px;
-            color: var(--secondary-color);
-            font-size: 0.95rem;
-        }
-
-        /* Radio and Checkbox */
-        .form-check {
-            margin-bottom: 12px;
-        }
-
-        .form-check-input {
-            width: 18px;
-            height: 18px;
-            margin-top: 2px;
-        }
-
-        .form-check-input:checked {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-        }
-
-        .form-check-label {
-            margin-left: 5px;
-            font-size: 0.95rem;
-        }
-
-        /* Buttons */
-        .btn-primary {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            font-size: 0.95rem;
-        }
-
-        .btn-primary:hover {
-            background-color: var(--primary-hover);
-            border-color: var(--primary-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(74, 107, 255, 0.2);
-        }
-
-        .btn-outline-primary {
-            color: var(--primary-color);
-            border-color: var(--primary-color);
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            font-size: 0.95rem;
-        }
-
-        .btn-outline-primary:hover {
-            background-color: var(--primary-color);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(74, 107, 255, 0.2);
-        }
-
-        .btn-accent {
-            background-color: var(--accent-color);
-            border-color: var(--accent-color);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .btn-accent:hover {
-            background-color: var(--accent-hover);
-            border-color: var(--accent-hover);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 201, 167, 0.2);
-        }
-
-        /* Summary Section */
-        .summary-section {
-            padding: 25px;
-            border-radius: 12px;
-            background-color: white;
-            box-shadow: var(--card-shadow);
-        }
-
-        .summary-section h3 {
-            font-weight: 600;
-            color: var(--secondary-color);
-            margin-bottom: 20px;
-            font-size: 1.3rem;
-        }
-
-        .summary-item {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 12px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .summary-item:last-child {
-            border-bottom: none;
-        }
-
-        .summary-item label {
-            color: var(--secondary-color);
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-
-        .summary-value {
-            font-weight: 600;
-            color: var(--primary-color);
-            font-size: 0.95rem;
-        }
-
-        /* Voucher Container */
-        .voucher-container {
-            background: var(--light-bg);
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        .voucher-container .input-group {
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .voucher-container .form-control {
-            border-right: none;
-        }
-
-        .voucher-container .btn {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-        }
-
-        /* Policy Text */
-        .student-policy-text {
-            font-size: 0.9rem;
-            background: var(--light-bg);
-            padding: 15px;
-            border-radius: 10px;
-        }
-
-        .student-policy-link {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .student-policy-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Progress Steps */
-        .progress-steps {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 30px;
-            position: relative;
-            flex-wrap: wrap;
-        }
-
-        .progress-steps::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--border-color);
-            z-index: 1;
-        }
-
-        .step {
-            position: relative;
-            z-index: 2;
-            background: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            color: var(--secondary-color);
-            font-weight: 500;
-            border: 2px solid var(--border-color);
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-            text-align: center;
-            flex: 1;
-            min-width: 120px;
-            max-width: calc(33% - 20px);
-        }
-
-        .step.active {
-            border-color: var(--primary-color);
-            background-color: var(--primary-color);
-            color: white;
-            box-shadow: 0 4px 8px rgba(74, 107, 255, 0.2);
-        }
-
-        .step i {
-            margin-right: 5px;
-        }
-
-        /* Payment Summary Highlights */
-        .highlight-item {
-            background: var(--light-bg);
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        .highlight-item .label {
-            font-size: 0.9rem;
-            color: var(--secondary-color);
-            opacity: 0.8;
-        }
-
-        .highlight-item .value {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--primary-color);
-        }
-
-        /* Responsive Adjustments */
-        @media (max-width: 992px) {
-            .header h1 {
-                font-size: 2rem;
-            }
-            
-            .header p {
-                font-size: 1rem;
-            }
-            
-            .step {
-                min-width: 100px;
-                font-size: 0.8rem;
-                padding: 6px 12px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .header {
-                padding: 30px 20px;
-                margin-bottom: 30px;
-            }
-            
-            .header h1 {
-                font-size: 1.8rem;
-            }
-            
-            .form-container {
-                padding: 20px;
-            }
-            
-            .form-section h3 {
-                font-size: 1.2rem;
-                margin-bottom: 20px;
-            }
-            
-            .progress-steps::before {
-                display: none;
-            }
-            
-            .step {
-                max-width: 100%;
-                width: 100%;
-                margin-bottom: 5px;
-                border-radius: 8px;
-            }
-            
-            .summary-section {
-                margin-top: 20px;
-            }
-            
-            .btn, .btn-outline-primary, .btn-primary {
-                padding: 10px 15px;
-                font-size: 0.9rem;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .header {
-                padding: 25px 15px;
-            }
-            
-            .header h1 {
-                font-size: 1.5rem;
-            }
-            
-            .form-container {
-                padding: 15px;
-            }
-            
-            .form-control, .form-select {
-                padding: 10px 12px;
-            }
-            
-            .d-flex.gap-4 {
-                gap: 15px !important;
-                flex-direction: column;
-            }
-            
-            .summary-item {
-                flex-direction: column;
-            }
-            
-            .summary-item label {
-                margin-bottom: 5px;
-            }
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        .fade-in {
-            animation: fadeIn 0.5s ease-out;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset('prod/cssFile.css') }}">
 </head>
 
 <body>
-
     <div class="container my-4">
         <!-- Header Section -->
         <div class="header rounded-3">
@@ -493,7 +49,7 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="fullName" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="fullName" placeholder="Enter full name" required>
+                            <input type="text" class="form-control" id="fullName" placeholderresponsibility placeholder="Enter full name" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="email" class="form-label">Email</label>
@@ -575,6 +131,16 @@
                 <form id="courseSelectionForm">
                     <div class="row">
                         <div class="col-md-6 mb-3">
+                            <label for="course" class="form-label">Choose Your Course</label>
+                            <select class="form-select" id="course" required>
+                                <option value="" selected disabled>Select course</option>
+                                <option value="Frontend Engineering">Frontend Engineering</option>
+                                <option value="Backend Engineering">Backend Engineering</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Data Analysis">Data Analysis</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
                             <label for="cohort" class="form-label">Cohort (Start Month)</label>
                             <select class="form-select" id="cohort" required>
                                 <option value="" selected disabled>Select your Cohort</option>
@@ -584,6 +150,8 @@
                                 <option value="October 2025">October 2025</option>
                             </select>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Class Format</label>
                             <div class="d-flex gap-4">
@@ -603,9 +171,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row">
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Payment Plan</label>
                             <div class="d-flex gap-4">
@@ -625,6 +190,8 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Payment Currency</label>
                             <div class="d-flex gap-4 flex-wrap">
@@ -649,7 +216,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="voucher-container mb-3">
                         <label for="voucher" class="form-label">Have a discount voucher?</label>
                         <div class="input-group">
@@ -659,14 +225,12 @@
                             </button>
                         </div>
                     </div>
-
                     <div class="form-check student-policy-text mb-3">
                         <input class="form-check-input" type="checkbox" value="" id="studentPolicyCheckbox" required>
                         <label class="form-check-label" for="studentPolicyCheckbox">
                             I agree to Fredmind School's <a href="#" class="student-policy-link">Terms of Service</a> and <a href="#" class="student-policy-link">Privacy Policy</a>.
                         </label>
                     </div>
-
                     <div class="d-flex justify-content-between mt-4">
                         <button class="btn btn-outline-primary" id="backToPersonalInfo">
                             <i class="fas fa-arrow-left me-2"></i> Back
@@ -716,11 +280,14 @@
                             <label>Advisor ID:</label>
                             <span id="summaryAdvisor" class="summary-value">Not provided</span>
                         </div>
-
                         <h3 class="mt-4">
                             <i class="fas fa-book me-2"></i>
                             Course Selection
                         </h3>
+                        <div class="summary-item">
+                            <label>Course:</label>
+                            <span id="summaryCourse" class="summary-value">Not selected</span>
+                        </div>
                         <div class="summary-item">
                             <label>Cohort:</label>
                             <span id="summaryCohort" class="summary-value">Not selected</span>
@@ -743,19 +310,16 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-5">
                     <div class="summary-section">
                         <h3>
                             <i class="fas fa-file-invoice me-2"></i>
                             Payment Summary
                         </h3>
-                        
                         <div class="highlight-item">
                             <div class="label">Course Fee</div>
                             <div id="courseFee" class="value">₦ 0</div>
                         </div>
-                        
                         <div class="summary-item">
                             <label>Amount to Pay:</label>
                             <span id="amountToPay" class="summary-value">₦ 0</span>
@@ -764,22 +328,18 @@
                             <label>Balance to Pay:</label>
                             <span id="balanceToPay" class="summary-value">₦ 0</span>
                         </div>
-
                         <div class="highlight-item mt-4">
                             <div class="label">Amount Payable Now</div>
                             <div id="amountPayableNow" class="value" style="color: var(--accent-color);">₦ 0</div>
                         </div>
-                        
                         <div class="summary-item">
                             <label>Transaction Fee:</label>
                             <span id="transactionFee" class="summary-value">₦ 0</span>
                         </div>
-                        
                         <div class="highlight-item">
                             <div class="label">Total Amount Due</div>
                             <div id="totalAmountDue" class="value">₦ 0</div>
                         </div>
-
                         <button class="btn btn-primary w-100 mb-3 mt-3" id="payButton">
                             <i class="fas fa-lock me-2"></i>
                             Pay ₦ 0
@@ -788,7 +348,6 @@
                             <i class="fas fa-headset me-2"></i>
                             Need Help?
                         </button>
-                        
                         <div class="d-flex justify-content-between mt-4 flex-wrap">
                             <button class="btn btn-outline-primary mb-2" id="backToCourseSelection">
                                 <i class="fas fa-arrow-left me-2"></i> Back
@@ -815,7 +374,6 @@
                     form.classList.add('was-validated');
                     return;
                 }
-                
                 document.getElementById('personalInfoSection').style.display = 'none';
                 document.getElementById('courseSelectionSection').style.display = 'block';
                 updateProgressSteps(2);
@@ -835,7 +393,6 @@
                     form.classList.add('was-validated');
                     return;
                 }
-                
                 document.getElementById('courseSelectionSection').style.display = 'none';
                 document.getElementById('summarySection').style.display = 'block';
                 updateSummaryDetails();
@@ -878,6 +435,30 @@
                 'USDT/USDC': 'USDT '
             };
 
+            // Course fees in different currencies
+            const courseFees = {
+                'Frontend Engineering': {
+                    'NGN': 400000,
+                    'USD': 650,
+                    'USDT/USDC': 650
+                },
+                'Backend Engineering': {
+                    'NGN': 13000,
+                    'USD': 700,
+                    'USDT/USDC': 700
+                },
+                'Digital Marketing': {
+                    'NGN': 100000,
+                    'USD': 500,
+                    'USDT/USDC': 500
+                },
+                'Data Analysis': {
+                    'NGN': 100000,
+                    'USD': 600,
+                    'USDT/USDC': 600
+                }
+            };
+
             document.getElementById('courseSelectionForm').addEventListener('change', function() {
                 updatePaymentSummary();
             });
@@ -890,31 +471,26 @@
             });
 
             function updatePaymentSummary() {
+                const selectedCourse = document.getElementById('course').value;
                 const selectedCohort = document.getElementById('cohort').value;
+                const classFormat = document.querySelector('input[name="classFormat"]:checked').value;
                 const paymentPlan = document.querySelector('input[name="paymentPlan"]:checked').value;
                 const currency = document.querySelector('input[name="currency"]:checked').value;
 
-                let courseFee = calculateCourseFee(currency);
-                let amountToPay = paymentPlan === 'Full Payment' ? courseFee : courseFee / 2;
-                let balanceToPay = paymentPlan === 'Full Payment' ? 0 : courseFee / 2;
+                let courseFee = selectedCourse ? courseFees[selectedCourse][currency] : 0;
+                // Adjust for class format: Virtual is 10% cheaper than Physical
+                courseFee = classFormat === 'Virtual Class' ? courseFee * 0.9 : courseFee;
+                let amountToPay = paymentPlan === 'Full Payment' ? courseFee : courseFee * 0.5;
+                let balanceToPay = paymentPlan === 'Full Payment' ? 0 : courseFee * 0.5;
                 let transactionFee = currency === 'USDT/USDC' ? 0 : courseFee * 0.015; // 1.5% fee for NGN/USD
 
-                document.getElementById('courseFee').textContent = `${currentCurrency}${numberWithCommas(courseFee)}`;
-                document.getElementById('amountToPay').textContent = `${currentCurrency}${numberWithCommas(amountToPay)}`;
-                document.getElementById('balanceToPay').textContent = `${currentCurrency}${numberWithCommas(balanceToPay)}`;
-                document.getElementById('amountPayableNow').textContent = `${currentCurrency}${numberWithCommas(amountToPay)}`;
-                document.getElementById('transactionFee').textContent = `${currentCurrency}${numberWithCommas(transactionFee)}`;
-                document.getElementById('totalAmountDue').textContent = `${currentCurrency}${numberWithCommas(amountToPay + transactionFee)}`;
-                document.getElementById('payButton').innerHTML = `<i class="fas fa-lock me-2"></i> Pay ${currentCurrency}${numberWithCommas(amountToPay + transactionFee)}`;
-            }
-
-            function calculateCourseFee(currency) {
-                const fees = {
-                    'NGN': 350000,
-                    'USD': 600,
-                    'USDT/USDC': 600
-                };
-                return fees[currency];
+                document.getElementById('courseFee').textContent = `${currentCurrency}${numberWithCommas(Math.round(courseFee))}`;
+                document.getElementById('amountToPay').textContent = `${currentCurrency}${numberWithCommas(Math.round(amountToPay))}`;
+                document.getElementById('balanceToPay').textContent = `${currentCurrency}${numberWithCommas(Math.round(balanceToPay))}`;
+                document.getElementById('amountPayableNow').textContent = `${currentCurrency}${numberWithCommas(Math.round(amountToPay))}`;
+                document.getElementById('transactionFee').textContent = `${currentCurrency}${numberWithCommas(Math.round(transactionFee))}`;
+                document.getElementById('totalAmountDue').textContent = `${currentCurrency}${numberWithCommas(Math.round(amountToPay + transactionFee))}`;
+                document.getElementById('payButton').innerHTML = `<i class="fas fa-lock me-2"></i> Pay ${currentCurrency}${numberWithCommas(Math.round(amountToPay + transactionFee))}`;
             }
 
             function numberWithCommas(x) {
@@ -929,21 +505,18 @@
                 document.getElementById('summaryPhone').textContent = document.getElementById('phoneNumber').value || 'Not provided';
                 document.getElementById('summaryEducation').textContent = document.getElementById('academicAchievement').value || 'Not provided';
                 document.getElementById('summaryAge').textContent = document.getElementById('ageRange').value || 'Not provided';
-                
                 const country = document.getElementById('country').value;
                 const state = document.getElementById('state').value;
                 document.getElementById('summaryLocation').textContent = `${state ? state + ', ' : ''}${country || 'Not provided'}`;
-                
                 document.getElementById('summaryAdvisor').textContent = document.getElementById('advisorId').value || 'Not provided';
-
                 // Course Selection
+                document.getElementById('summaryCourse').textContent = document.getElementById('course').value || 'Not selected';
                 document.getElementById('summaryCohort').textContent = document.getElementById('cohort').value || 'Not selected';
                 document.getElementById('summaryClassFormat').textContent = document.querySelector('input[name="classFormat"]:checked').value || 'Not selected';
                 document.getElementById('summaryPaymentPlan').textContent = document.querySelector('input[name="paymentPlan"]:checked').value || 'Not selected';
                 document.getElementById('summaryCurrency').textContent = document.querySelector('input[name="currency"]:checked').value || 'Not selected';
                 document.getElementById('summaryVoucher').textContent = document.getElementById('voucher').value || 'Not applied';
-                
-                // Update payment summary as well
+                // Update payment summary
                 updatePaymentSummary();
             }
 
@@ -952,7 +525,6 @@
                 const voucherCode = document.getElementById('voucher').value;
                 if (voucherCode) {
                     alert(`Voucher "${voucherCode}" applied successfully!`);
-                    // Here you would typically make an API call to validate the voucher
                 } else {
                     alert('Please enter a voucher code');
                 }
@@ -966,7 +538,6 @@
             // Pay button
             document.getElementById('payButton').addEventListener('click', function() {
                 alert('Redirecting to secure payment gateway...');
-                // Here you would typically redirect to a payment processor
             });
         });
     </script>

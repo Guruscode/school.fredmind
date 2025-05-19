@@ -6,20 +6,22 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+    
     /**
      * Run the migrations.
      */
     public function up(): void
     {
         Schema::create('payments', function (Blueprint $table) {
-            $table->char('id', 40)->primary();
-            $table->char('user_id', 40);
-            $table->decimal('amount', 8, 2);
-            $table->string('status');
-            $table->json('meta')->nullable();
+            $table->id();
+            $table->foreignId('student_id')->constrained()->onDelete('cascade');
+            $table->string('paystack_reference')->unique();
+            $table->decimal('amount', 10, 2);
+            $table->string('currency');
+            $table->string('status')->default('pending');
+            $table->string('payment_plan');
+            $table->decimal('balance_due', 10, 2)->default(0);
             $table->timestamps();
-
-            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

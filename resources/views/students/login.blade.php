@@ -246,10 +246,48 @@
                 padding: 30px 20px;
             }
         }
+        .toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--error-color);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 9999;
+    animation: slideIn 0.5s ease forwards;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toast.hidden {
+    display: none;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
     </style>
 </head>
 <body>
+    <div id="errorToast" class="toast hidden">
+        <span id="errorText"></span>
+    </div>
     <div class="login-container">
+        
+        
+
         <div class="logo">
             <h1>Fredmind School</h1>
             <p>Expand your knowledge with our courses</p>
@@ -314,4 +352,24 @@
     </div>
 
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const errorText = @json($errors->first('email'));
+
+        if (errorText) {
+            const toast = document.getElementById('errorToast');
+            const toastText = document.getElementById('errorText');
+
+            toastText.textContent = errorText;
+            toast.classList.remove('hidden');
+
+            // Auto-hide after 4 seconds
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 4000);
+        }
+    });
+</script>
+
+
 </html>

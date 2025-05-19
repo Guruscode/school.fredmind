@@ -19,12 +19,36 @@ use App\Http\Controllers\Student\StudentAuthController;
 
 Route::prefix('student')->middleware('student.redirect')->group(function () {
   Route::get('register', [StudentAuthController::class, 'showRegistrationForm'])->name('student.register.form');
-  Route::post('register', [StudentAuthController::class, 'register'])->name('student.register');
+  // Route::post('register', [StudentAuthController::class, 'register'])->name('student.register');
 
   Route::get('login', [StudentAuthController::class, 'showLoginForm'])->name('student.login.form');
   Route::post('login', [StudentAuthController::class, 'login'])->name('student.login');
-  Route::get('success', [StudentAuthController::class, 'success'])->name('student.success.page');
+   // Forget Password Routes
+   Route::get('password/forgot', [StudentAuthController::class, 'showForgotPasswordForm'])->name('student.password.forgot.form');
+   Route::post('password/email', [StudentAuthController::class, 'sendPasswordResetLink'])->name('student.password.email');
+   Route::get('password/reset/{token}', [StudentAuthController::class, 'showResetPasswordForm'])->name('student.password.reset.form');
+   Route::post('password/reset', [StudentAuthController::class, 'resetPassword'])->name('student.password.reset');
+   Route::post('/register', [StudentAuthController::class, 'register'])->name('register');
+  Route::get('/payment/callback', [StudentAuthController::class, 'handlePaymentCallback'])->name('payment.callback');
+  Route::get('/payment/success', function () {
+      return view('payment.success'); // Create a success view
+  })->name('payment.success');
+  Route::get('/payment/failed', function () {
+      return view('payment.failed'); // Create a failed view
+  })->name('payment.failed');
+  });
+
+Route::prefix('student')->middleware('auth:student')->group(function () {
+  
   Route::get('dashboard', [StudentAuthController::class, 'studentdashboard'])->name('student.dashboard');
+   
+    // Profile Route
+    Route::get('profile', [StudentAuthController::class, 'showProfile'])->name('student.profile');
+    Route::post('profile', [StudentAuthController::class, 'updateProfile'])->name('student.profile.update');
+
+    // Logout Route
+    Route::post('logout', [StudentAuthController::class, 'logout'])->name('student.logout');
+
   Route::get('course', [StudentAuthController::class, 'studentCourse'])->name('student.course');
   Route::get('course/details', [StudentAuthController::class, 'studentCourseDetails'])->name('student.course.details');
   Route::get('programs', [StudentAuthController::class, 'studentProgram'])->name('student.programs');

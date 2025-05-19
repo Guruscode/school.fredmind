@@ -30,5 +30,10 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
-
+        'paystack' => [
+            'publicKey' => env('PAYSTACK_PUBLIC_KEY', 'pk_test_b95926431c43fa6641af1ade1f75cb1a19330200'),
+            'secretKey' => env('PAYSTACK_SECRET_KEY', 'sk_test_313261f95e20d2915774e3b36d2dd0754f47cf43'),
+            'paymentUrl' => env('PAYSTACK_PAYMENT_URL', 'https://api.paystack.co'),
+            'merchantEmail' => env('PAYSTACK_MERCHANT_EMAIL', 'support@fredmindschool.com'),
+        ],
 ];

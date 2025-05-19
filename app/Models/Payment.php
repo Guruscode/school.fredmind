@@ -2,17 +2,38 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Payment extends Model
 {
-    protected $keyType = 'string';
-    public $incrementing = false;
-    protected $fillable = ['id', 'user_id', 'amount', 'currency', 'reference', 'meta'];
+    use HasFactory;
 
-    public function user(): BelongsTo
+    protected $fillable = [
+        'student_id',
+        'paystack_reference',
+        'amount',
+        'currency',
+        'status',
+        'payment_plan',
+        'balance_due',
+    ];
+
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'amount' => 'decimal:2',
+        'balance_due' => 'decimal:2',
+    ];
+
+    /**
+     * Relationship with student
+     */
+    public function student()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(Student::class);
     }
 }
